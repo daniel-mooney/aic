@@ -11,6 +11,8 @@ The task board provides a standardized physical interface for the manipulation o
 
 ![AIC Task Board](../../media/aic_task_board.png)
 
+The board is 300 x 425 x 21 mm.
+
 ## 2. Zone Descriptions
 
 The AIC task board is organized into four functional zones that simulate a complete electronics assembly workflow. Zones 1 and 2 serve as the assembly targets:
