@@ -1,0 +1,901 @@
+[0.161s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--cmake-clean-cache']
+[0.161s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=True, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x763e82e768d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x763e82fdad80>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x763e82fdad80>>, mixin_verb=('build',))
+[0.220s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.220s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.220s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.220s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.220s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.220s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.220s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(aic_adapter) by extensions ['ignore', 'ignore_ament_install']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(aic_adapter) by extension 'ignore'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(aic_adapter) by extension 'ignore_ament_install'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(aic_adapter) by extensions ['colcon_pkg']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(aic_adapter) by extension 'colcon_pkg'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(aic_adapter) by extensions ['colcon_meta']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(aic_adapter) by extension 'colcon_meta'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(aic_adapter) by extensions ['ros']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(aic_adapter) by extension 'ros'
+[0.278s] DEBUG:colcon.colcon_core.package_identification:Package 'aic_adapter' with type 'ros.ament_cmake' and name 'aic_adapter'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(aic_assets) by extensions ['ignore', 'ignore_ament_install']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(aic_assets) by extension 'ignore'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(aic_assets) by extension 'ignore_ament_install'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(aic_assets) by extensions ['colcon_pkg']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(aic_assets) by extension 'colcon_pkg'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(aic_assets) by extensions ['colcon_meta']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(aic_assets) by extension 'colcon_meta'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(aic_assets) by extensions ['ros']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(aic_assets) by extension 'ros'
+[0.280s] DEBUG:colcon.colcon_core.package_identification:Package 'aic_assets' with type 'ros.ament_cmake' and name 'aic_assets'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(aic_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(aic_bringup) by extension 'ignore'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(aic_bringup) by extension 'ignore_ament_install'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(aic_bringup) by extensions ['colcon_pkg']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(aic_bringup) by extension 'colcon_pkg'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(aic_bringup) by extensions ['colcon_meta']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(aic_bringup) by extension 'colcon_meta'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(aic_bringup) by extensions ['ros']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(aic_bringup) by extension 'ros'
+[0.281s] DEBUG:colcon.colcon_core.package_identification:Package 'aic_bringup' with type 'ros.ament_cmake' and name 'aic_bringup'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(aic_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(aic_controller) by extension 'ignore'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(aic_controller) by extension 'ignore_ament_install'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(aic_controller) by extensions ['colcon_pkg']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(aic_controller) by extension 'colcon_pkg'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(aic_controller) by extensions ['colcon_meta']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(aic_controller) by extension 'colcon_meta'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(aic_controller) by extensions ['ros']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(aic_controller) by extension 'ros'
+[0.284s] DEBUG:colcon.colcon_core.package_identification:Package 'aic_controller' with type 'ros.ament_cmake' and name 'aic_controller'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(aic_description) by extensions ['ignore', 'ignore_ament_install']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(aic_description) by extension 'ignore'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(aic_description) by extension 'ignore_ament_install'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(aic_description) by extensions ['colcon_pkg']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(aic_description) by extension 'colcon_pkg'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(aic_description) by extensions ['colcon_meta']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(aic_description) by extension 'colcon_meta'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(aic_description) by extensions ['ros']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(aic_description) by extension 'ros'
+[0.285s] DEBUG:colcon.colcon_core.package_identification:Package 'aic_description' with type 'ros.ament_cmake' and name 'aic_description'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(aic_engine) by extensions ['ignore', 'ignore_ament_install']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(aic_engine) by extension 'ignore'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(aic_engine) by extension 'ignore_ament_install'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(aic_engine) by extensions ['colcon_pkg']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(aic_engine) by extension 'colcon_pkg'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(aic_engine) by extensions ['colcon_meta']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(aic_engine) by extension 'colcon_meta'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(aic_engine) by extensions ['ros']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(aic_engine) by extension 'ros'
+[0.288s] DEBUG:colcon.colcon_core.package_identification:Package 'aic_engine' with type 'ros.ament_cmake' and name 'aic_engine'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(aic_example_policies) by extensions ['ignore', 'ignore_ament_install']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(aic_example_policies) by extension 'ignore'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(aic_example_policies) by extension 'ignore_ament_install'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(aic_example_policies) by extensions ['colcon_pkg']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(aic_example_policies) by extension 'colcon_pkg'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(aic_example_policies) by extensions ['colcon_meta']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(aic_example_policies) by extension 'colcon_meta'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(aic_example_policies) by extensions ['ros']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(aic_example_policies) by extension 'ros'
+[0.290s] DEBUG:colcon.colcon_core.package_identification:Package 'aic_example_policies' with type 'ros.ament_python' and name 'aic_example_policies'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(aic_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(aic_gazebo) by extension 'ignore'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(aic_gazebo) by extension 'ignore_ament_install'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(aic_gazebo) by extensions ['colcon_pkg']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(aic_gazebo) by extension 'colcon_pkg'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(aic_gazebo) by extensions ['colcon_meta']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(aic_gazebo) by extension 'colcon_meta'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(aic_gazebo) by extensions ['ros']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(aic_gazebo) by extension 'ros'
+[0.292s] DEBUG:colcon.colcon_core.package_identification:Package 'aic_gazebo' with type 'ros.ament_cmake' and name 'aic_gazebo'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces) by extension 'ignore'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces) by extension 'ignore_ament_install'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces) by extensions ['colcon_pkg']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces) by extension 'colcon_pkg'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces) by extensions ['colcon_meta']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces) by extension 'colcon_meta'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces) by extensions ['ros']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces) by extension 'ros'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces) by extensions ['cmake', 'python']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces) by extension 'cmake'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces) by extension 'python'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces) by extensions ['python_setup_py']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces) by extension 'python_setup_py'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_control_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_control_interfaces) by extension 'ignore'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_control_interfaces) by extension 'ignore_ament_install'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_control_interfaces) by extensions ['colcon_pkg']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_control_interfaces) by extension 'colcon_pkg'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_control_interfaces) by extensions ['colcon_meta']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_control_interfaces) by extension 'colcon_meta'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_control_interfaces) by extensions ['ros']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_control_interfaces) by extension 'ros'
+[0.294s] DEBUG:colcon.colcon_core.package_identification:Package 'aic_interfaces/aic_control_interfaces' with type 'ros.ament_cmake' and name 'aic_control_interfaces'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_engine_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_engine_interfaces) by extension 'ignore'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_engine_interfaces) by extension 'ignore_ament_install'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_engine_interfaces) by extensions ['colcon_pkg']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_engine_interfaces) by extension 'colcon_pkg'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_engine_interfaces) by extensions ['colcon_meta']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_engine_interfaces) by extension 'colcon_meta'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_engine_interfaces) by extensions ['ros']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_engine_interfaces) by extension 'ros'
+[0.296s] DEBUG:colcon.colcon_core.package_identification:Package 'aic_interfaces/aic_engine_interfaces' with type 'ros.ament_cmake' and name 'aic_engine_interfaces'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_model_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_model_interfaces) by extension 'ignore'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_model_interfaces) by extension 'ignore_ament_install'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_model_interfaces) by extensions ['colcon_pkg']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_model_interfaces) by extension 'colcon_pkg'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_model_interfaces) by extensions ['colcon_meta']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_model_interfaces) by extension 'colcon_meta'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_model_interfaces) by extensions ['ros']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_model_interfaces) by extension 'ros'
+[0.298s] DEBUG:colcon.colcon_core.package_identification:Package 'aic_interfaces/aic_model_interfaces' with type 'ros.ament_cmake' and name 'aic_model_interfaces'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_task_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_task_interfaces) by extension 'ignore'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_task_interfaces) by extension 'ignore_ament_install'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_task_interfaces) by extensions ['colcon_pkg']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_task_interfaces) by extension 'colcon_pkg'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_task_interfaces) by extensions ['colcon_meta']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_task_interfaces) by extension 'colcon_meta'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_task_interfaces) by extensions ['ros']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(aic_interfaces/aic_task_interfaces) by extension 'ros'
+[0.299s] DEBUG:colcon.colcon_core.package_identification:Package 'aic_interfaces/aic_task_interfaces' with type 'ros.ament_cmake' and name 'aic_task_interfaces'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(aic_model) by extensions ['ignore', 'ignore_ament_install']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(aic_model) by extension 'ignore'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(aic_model) by extension 'ignore_ament_install'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(aic_model) by extensions ['colcon_pkg']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(aic_model) by extension 'colcon_pkg'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(aic_model) by extensions ['colcon_meta']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(aic_model) by extension 'colcon_meta'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(aic_model) by extensions ['ros']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(aic_model) by extension 'ros'
+[0.301s] DEBUG:colcon.colcon_core.package_identification:Package 'aic_model' with type 'ros.ament_python' and name 'aic_model'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(aic_scoring) by extensions ['ignore', 'ignore_ament_install']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(aic_scoring) by extension 'ignore'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(aic_scoring) by extension 'ignore_ament_install'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(aic_scoring) by extensions ['colcon_pkg']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(aic_scoring) by extension 'colcon_pkg'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(aic_scoring) by extensions ['colcon_meta']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(aic_scoring) by extension 'colcon_meta'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(aic_scoring) by extensions ['ros']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(aic_scoring) by extension 'ros'
+[0.303s] DEBUG:colcon.colcon_core.package_identification:Package 'aic_scoring' with type 'ros.ament_cmake' and name 'aic_scoring'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils) by extensions ['ignore', 'ignore_ament_install']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils) by extension 'ignore'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils) by extension 'ignore_ament_install'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils) by extensions ['colcon_pkg']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils) by extension 'colcon_pkg'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils) by extensions ['colcon_meta']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils) by extension 'colcon_meta'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils) by extensions ['ros']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils) by extension 'ros'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils) by extensions ['cmake', 'python']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils) by extension 'cmake'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils) by extension 'python'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils) by extensions ['python_setup_py']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils) by extension 'python_setup_py'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac) by extensions ['ignore', 'ignore_ament_install']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac) by extension 'ignore'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac) by extension 'ignore_ament_install'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac) by extensions ['colcon_pkg']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac) by extension 'colcon_pkg'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac) by extensions ['colcon_meta']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac) by extension 'colcon_meta'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac) by extensions ['ros']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac) by extension 'ros'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac) by extensions ['cmake', 'python']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac) by extension 'cmake'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac) by extension 'python'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac) by extensions ['python_setup_py']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac) by extension 'python_setup_py'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab) by extensions ['ignore', 'ignore_ament_install']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab) by extension 'ignore'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab) by extension 'ignore_ament_install'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab) by extensions ['colcon_pkg']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab) by extension 'colcon_pkg'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab) by extensions ['colcon_meta']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab) by extension 'colcon_meta'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab) by extensions ['ros']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab) by extension 'ros'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab) by extensions ['cmake', 'python']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab) by extension 'cmake'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab) by extension 'python'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab) by extensions ['python_setup_py']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab) by extension 'python_setup_py'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts) by extension 'ignore'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts) by extension 'ignore_ament_install'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts) by extensions ['colcon_pkg']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts) by extension 'colcon_pkg'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts) by extensions ['colcon_meta']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts) by extension 'colcon_meta'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts) by extensions ['ros']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts) by extension 'ros'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts) by extensions ['cmake', 'python']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts) by extension 'cmake'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts) by extension 'python'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts) by extensions ['python_setup_py']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts) by extension 'python_setup_py'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts/rsl_rl) by extensions ['ignore', 'ignore_ament_install']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts/rsl_rl) by extension 'ignore'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts/rsl_rl) by extension 'ignore_ament_install'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts/rsl_rl) by extensions ['colcon_pkg']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts/rsl_rl) by extension 'colcon_pkg'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts/rsl_rl) by extensions ['colcon_meta']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts/rsl_rl) by extension 'colcon_meta'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts/rsl_rl) by extensions ['ros']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts/rsl_rl) by extension 'ros'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts/rsl_rl) by extensions ['cmake', 'python']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts/rsl_rl) by extension 'cmake'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts/rsl_rl) by extension 'python'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts/rsl_rl) by extensions ['python_setup_py']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/scripts/rsl_rl) by extension 'python_setup_py'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source) by extensions ['ignore', 'ignore_ament_install']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source) by extension 'ignore'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source) by extension 'ignore_ament_install'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source) by extensions ['colcon_pkg']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source) by extension 'colcon_pkg'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source) by extensions ['colcon_meta']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source) by extension 'colcon_meta'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source) by extensions ['ros']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source) by extension 'ros'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source) by extensions ['cmake', 'python']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source) by extension 'cmake'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source) by extension 'python'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source) by extensions ['python_setup_py']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source) by extension 'python_setup_py'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source/aic_task) by extensions ['ignore', 'ignore_ament_install']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source/aic_task) by extension 'ignore'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source/aic_task) by extension 'ignore_ament_install'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source/aic_task) by extensions ['colcon_pkg']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source/aic_task) by extension 'colcon_pkg'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source/aic_task) by extensions ['colcon_meta']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source/aic_task) by extension 'colcon_meta'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source/aic_task) by extensions ['ros']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source/aic_task) by extension 'ros'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source/aic_task) by extensions ['cmake', 'python']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source/aic_task) by extension 'cmake'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source/aic_task) by extension 'python'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source/aic_task) by extensions ['python_setup_py']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_isaac/aic_isaaclab/source/aic_task) by extension 'python_setup_py'
+[0.676s] DEBUG:colcon.colcon_core.package_identification:Package 'aic_utils/aic_isaac/aic_isaaclab/source/aic_task' with type 'python' and name 'aic_task'
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_mujoco) by extensions ['ignore', 'ignore_ament_install']
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_mujoco) by extension 'ignore'
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_mujoco) by extension 'ignore_ament_install'
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_mujoco) by extensions ['colcon_pkg']
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_mujoco) by extension 'colcon_pkg'
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_mujoco) by extensions ['colcon_meta']
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_mujoco) by extension 'colcon_meta'
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_mujoco) by extensions ['ros']
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_mujoco) by extension 'ros'
+[0.678s] DEBUG:colcon.colcon_core.package_identification:Package 'aic_utils/aic_mujoco' with type 'ros.ament_cmake' and name 'aic_mujoco'
+[0.678s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_teleoperation) by extensions ['ignore', 'ignore_ament_install']
+[0.678s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_teleoperation) by extension 'ignore'
+[0.678s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_teleoperation) by extension 'ignore_ament_install'
+[0.678s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_teleoperation) by extensions ['colcon_pkg']
+[0.679s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_teleoperation) by extension 'colcon_pkg'
+[0.679s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_teleoperation) by extensions ['colcon_meta']
+[0.679s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_teleoperation) by extension 'colcon_meta'
+[0.679s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_teleoperation) by extensions ['ros']
+[0.679s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/aic_teleoperation) by extension 'ros'
+[0.679s] DEBUG:colcon.colcon_core.package_identification:Package 'aic_utils/aic_teleoperation' with type 'ros.ament_python' and name 'aic_teleoperation'
+[0.679s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/lerobot_robot_aic) by extensions ['ignore', 'ignore_ament_install']
+[0.680s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/lerobot_robot_aic) by extension 'ignore'
+[0.680s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/lerobot_robot_aic) by extension 'ignore_ament_install'
+[0.680s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/lerobot_robot_aic) by extensions ['colcon_pkg']
+[0.680s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/lerobot_robot_aic) by extension 'colcon_pkg'
+[0.680s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/lerobot_robot_aic) by extensions ['colcon_meta']
+[0.680s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/lerobot_robot_aic) by extension 'colcon_meta'
+[0.680s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/lerobot_robot_aic) by extensions ['ros']
+[0.680s] Level 1:colcon.colcon_core.package_identification:_identify(aic_utils/lerobot_robot_aic) by extension 'ros'
+[0.681s] DEBUG:colcon.colcon_core.package_identification:Package 'aic_utils/lerobot_robot_aic' with type 'ros.ament_python' and name 'lerobot_robot_aic'
+[0.681s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.681s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.681s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.681s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extensions ['ignore', 'ignore_ament_install']
+[0.681s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'ignore'
+[0.681s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'ignore_ament_install'
+[0.681s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extensions ['colcon_pkg']
+[0.681s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'colcon_pkg'
+[0.681s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extensions ['colcon_meta']
+[0.681s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'colcon_meta'
+[0.681s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extensions ['ros']
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'ros'
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extensions ['cmake', 'python']
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'cmake'
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'python'
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extensions ['python_setup_py']
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'python_setup_py'
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(data/bags) by extensions ['ignore', 'ignore_ament_install']
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(data/bags) by extension 'ignore'
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(data/bags) by extension 'ignore_ament_install'
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(data/bags) by extensions ['colcon_pkg']
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(data/bags) by extension 'colcon_pkg'
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(data/bags) by extensions ['colcon_meta']
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(data/bags) by extension 'colcon_meta'
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(data/bags) by extensions ['ros']
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(data/bags) by extension 'ros'
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(data/bags) by extensions ['cmake', 'python']
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(data/bags) by extension 'cmake'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(data/bags) by extension 'python'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(data/bags) by extensions ['python_setup_py']
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(data/bags) by extension 'python_setup_py'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(data/env) by extensions ['ignore', 'ignore_ament_install']
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(data/env) by extension 'ignore'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(data/env) by extension 'ignore_ament_install'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(data/env) by extensions ['colcon_pkg']
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(data/env) by extension 'colcon_pkg'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(data/env) by extensions ['colcon_meta']
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(data/env) by extension 'colcon_meta'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(data/env) by extensions ['ros']
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(data/env) by extension 'ros'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(data/env) by extensions ['cmake', 'python']
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(data/env) by extension 'cmake'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(data/env) by extension 'python'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(data/env) by extensions ['python_setup_py']
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(data/env) by extension 'python_setup_py'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extensions ['ignore', 'ignore_ament_install']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extension 'ignore'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extension 'ignore_ament_install'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extensions ['colcon_pkg']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extension 'colcon_pkg'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extensions ['colcon_meta']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extension 'colcon_meta'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extensions ['ros']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extension 'ros'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extensions ['cmake', 'python']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extension 'cmake'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extension 'python'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extensions ['python_setup_py']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extension 'python_setup_py'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_eval) by extensions ['ignore', 'ignore_ament_install']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_eval) by extension 'ignore'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_eval) by extension 'ignore_ament_install'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_eval) by extensions ['colcon_pkg']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_eval) by extension 'colcon_pkg'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_eval) by extensions ['colcon_meta']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_eval) by extension 'colcon_meta'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_eval) by extensions ['ros']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_eval) by extension 'ros'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_eval) by extensions ['cmake', 'python']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_eval) by extension 'cmake'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_eval) by extension 'python'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_eval) by extensions ['python_setup_py']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_eval) by extension 'python_setup_py'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_model) by extensions ['ignore', 'ignore_ament_install']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_model) by extension 'ignore'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_model) by extension 'ignore_ament_install'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_model) by extensions ['colcon_pkg']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_model) by extension 'colcon_pkg'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_model) by extensions ['colcon_meta']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_model) by extension 'colcon_meta'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_model) by extensions ['ros']
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_model) by extension 'ros'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_model) by extensions ['cmake', 'python']
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_model) by extension 'cmake'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_model) by extension 'python'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_model) by extensions ['python_setup_py']
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(docker/aic_model) by extension 'python_setup_py'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(docker/rmw_zenohd) by extensions ['ignore', 'ignore_ament_install']
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(docker/rmw_zenohd) by extension 'ignore'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(docker/rmw_zenohd) by extension 'ignore_ament_install'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(docker/rmw_zenohd) by extensions ['colcon_pkg']
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(docker/rmw_zenohd) by extension 'colcon_pkg'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(docker/rmw_zenohd) by extensions ['colcon_meta']
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(docker/rmw_zenohd) by extension 'colcon_meta'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(docker/rmw_zenohd) by extensions ['ros']
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(docker/rmw_zenohd) by extension 'ros'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(docker/rmw_zenohd) by extensions ['cmake', 'python']
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(docker/rmw_zenohd) by extension 'cmake'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(docker/rmw_zenohd) by extension 'python'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(docker/rmw_zenohd) by extensions ['python_setup_py']
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(docker/rmw_zenohd) by extension 'python_setup_py'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ignore', 'ignore_ament_install']
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore_ament_install'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_pkg']
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_pkg'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_meta']
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_meta'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ros']
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ros'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['cmake', 'python']
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'cmake'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['python_setup_py']
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python_setup_py'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(superviser) by extensions ['ignore', 'ignore_ament_install']
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(superviser) by extension 'ignore'
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(superviser) by extension 'ignore_ament_install'
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(superviser) by extensions ['colcon_pkg']
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(superviser) by extension 'colcon_pkg'
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(superviser) by extensions ['colcon_meta']
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(superviser) by extension 'colcon_meta'
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(superviser) by extensions ['ros']
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(superviser) by extension 'ros'
+[0.689s] DEBUG:colcon.colcon_core.package_identification:Package 'superviser' with type 'ros.ament_python' and name 'superviser'
+[0.689s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.689s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.689s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.689s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.689s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'aic_assets' build argument 'cmake_args' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'aic_assets' build argument 'cmake_target' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'aic_assets' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'aic_assets' build argument 'cmake_clean_cache' from command line to 'True'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'aic_assets' build argument 'cmake_clean_first' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'aic_assets' build argument 'cmake_force_configure' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'aic_assets' build argument 'ament_cmake_args' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'aic_assets' build argument 'catkin_cmake_args' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'aic_assets' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.726s] DEBUG:colcon.colcon_core.verb:Building package 'aic_assets' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_assets', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets', 'merge_install': False, 'path': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_assets', 'symlink_install': False, 'test_result_base': None}
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'aic_control_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'aic_control_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'aic_control_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'aic_control_interfaces' build argument 'cmake_clean_cache' from command line to 'True'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'aic_control_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'aic_control_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'aic_control_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'aic_control_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'aic_control_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.727s] DEBUG:colcon.colcon_core.verb:Building package 'aic_control_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_control_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_control_interfaces', 'merge_install': False, 'path': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_interfaces/aic_control_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'aic_engine_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'aic_engine_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'aic_engine_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'aic_engine_interfaces' build argument 'cmake_clean_cache' from command line to 'True'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'aic_engine_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'aic_engine_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'aic_engine_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'aic_engine_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'aic_engine_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.727s] DEBUG:colcon.colcon_core.verb:Building package 'aic_engine_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_engine_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces', 'merge_install': False, 'path': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_interfaces/aic_engine_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'aic_task' build argument 'cmake_args' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'aic_task' build argument 'cmake_target' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'aic_task' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'aic_task' build argument 'cmake_clean_cache' from command line to 'True'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'aic_task' build argument 'cmake_clean_first' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'aic_task' build argument 'cmake_force_configure' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'aic_task' build argument 'ament_cmake_args' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'aic_task' build argument 'catkin_cmake_args' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'aic_task' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.728s] DEBUG:colcon.colcon_core.verb:Building package 'aic_task' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task', 'merge_install': False, 'path': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_utils/aic_isaac/aic_isaaclab/source/aic_task', 'symlink_install': False, 'test_result_base': None}
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'aic_task_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'aic_task_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'aic_task_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'aic_task_interfaces' build argument 'cmake_clean_cache' from command line to 'True'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'aic_task_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'aic_task_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'aic_task_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'aic_task_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'aic_task_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.728s] DEBUG:colcon.colcon_core.verb:Building package 'aic_task_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces', 'merge_install': False, 'path': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_interfaces/aic_task_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'superviser' build argument 'cmake_args' from command line to 'None'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'superviser' build argument 'cmake_target' from command line to 'None'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'superviser' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'superviser' build argument 'cmake_clean_cache' from command line to 'True'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'superviser' build argument 'cmake_clean_first' from command line to 'False'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'superviser' build argument 'cmake_force_configure' from command line to 'False'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'superviser' build argument 'ament_cmake_args' from command line to 'None'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'superviser' build argument 'catkin_cmake_args' from command line to 'None'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'superviser' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.729s] DEBUG:colcon.colcon_core.verb:Building package 'superviser' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser', 'merge_install': False, 'path': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/superviser', 'symlink_install': False, 'test_result_base': None}
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'aic_controller' build argument 'cmake_args' from command line to 'None'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'aic_controller' build argument 'cmake_target' from command line to 'None'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'aic_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'aic_controller' build argument 'cmake_clean_cache' from command line to 'True'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'aic_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'aic_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'aic_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'aic_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.729s] Level 5:colcon.colcon_core.verb:set package 'aic_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.729s] DEBUG:colcon.colcon_core.verb:Building package 'aic_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_controller', 'merge_install': False, 'path': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_controller', 'symlink_install': False, 'test_result_base': None}
+[0.730s] Level 5:colcon.colcon_core.verb:set package 'aic_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.730s] Level 5:colcon.colcon_core.verb:set package 'aic_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.730s] Level 5:colcon.colcon_core.verb:set package 'aic_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.730s] Level 5:colcon.colcon_core.verb:set package 'aic_gazebo' build argument 'cmake_clean_cache' from command line to 'True'
+[0.730s] Level 5:colcon.colcon_core.verb:set package 'aic_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.730s] Level 5:colcon.colcon_core.verb:set package 'aic_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.730s] Level 5:colcon.colcon_core.verb:set package 'aic_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.730s] Level 5:colcon.colcon_core.verb:set package 'aic_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.730s] Level 5:colcon.colcon_core.verb:set package 'aic_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.730s] DEBUG:colcon.colcon_core.verb:Building package 'aic_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_gazebo', 'merge_install': False, 'path': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.730s] Level 5:colcon.colcon_core.verb:set package 'aic_model_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.730s] Level 5:colcon.colcon_core.verb:set package 'aic_model_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.730s] Level 5:colcon.colcon_core.verb:set package 'aic_model_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.730s] Level 5:colcon.colcon_core.verb:set package 'aic_model_interfaces' build argument 'cmake_clean_cache' from command line to 'True'
+[0.730s] Level 5:colcon.colcon_core.verb:set package 'aic_model_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.730s] Level 5:colcon.colcon_core.verb:set package 'aic_model_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.730s] Level 5:colcon.colcon_core.verb:set package 'aic_model_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.731s] Level 5:colcon.colcon_core.verb:set package 'aic_model_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.731s] Level 5:colcon.colcon_core.verb:set package 'aic_model_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.731s] DEBUG:colcon.colcon_core.verb:Building package 'aic_model_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_model_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_model_interfaces', 'merge_install': False, 'path': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_interfaces/aic_model_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.731s] Level 5:colcon.colcon_core.verb:set package 'aic_scoring' build argument 'cmake_args' from command line to 'None'
+[0.731s] Level 5:colcon.colcon_core.verb:set package 'aic_scoring' build argument 'cmake_target' from command line to 'None'
+[0.731s] Level 5:colcon.colcon_core.verb:set package 'aic_scoring' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.731s] Level 5:colcon.colcon_core.verb:set package 'aic_scoring' build argument 'cmake_clean_cache' from command line to 'True'
+[0.731s] Level 5:colcon.colcon_core.verb:set package 'aic_scoring' build argument 'cmake_clean_first' from command line to 'False'
+[0.731s] Level 5:colcon.colcon_core.verb:set package 'aic_scoring' build argument 'cmake_force_configure' from command line to 'False'
+[0.731s] Level 5:colcon.colcon_core.verb:set package 'aic_scoring' build argument 'ament_cmake_args' from command line to 'None'
+[0.731s] Level 5:colcon.colcon_core.verb:set package 'aic_scoring' build argument 'catkin_cmake_args' from command line to 'None'
+[0.731s] Level 5:colcon.colcon_core.verb:set package 'aic_scoring' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.731s] DEBUG:colcon.colcon_core.verb:Building package 'aic_scoring' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_scoring', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_scoring', 'merge_install': False, 'path': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_scoring', 'symlink_install': False, 'test_result_base': None}
+[0.731s] Level 5:colcon.colcon_core.verb:set package 'aic_teleoperation' build argument 'cmake_args' from command line to 'None'
+[0.731s] Level 5:colcon.colcon_core.verb:set package 'aic_teleoperation' build argument 'cmake_target' from command line to 'None'
+[0.731s] Level 5:colcon.colcon_core.verb:set package 'aic_teleoperation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.731s] Level 5:colcon.colcon_core.verb:set package 'aic_teleoperation' build argument 'cmake_clean_cache' from command line to 'True'
+[0.732s] Level 5:colcon.colcon_core.verb:set package 'aic_teleoperation' build argument 'cmake_clean_first' from command line to 'False'
+[0.732s] Level 5:colcon.colcon_core.verb:set package 'aic_teleoperation' build argument 'cmake_force_configure' from command line to 'False'
+[0.732s] Level 5:colcon.colcon_core.verb:set package 'aic_teleoperation' build argument 'ament_cmake_args' from command line to 'None'
+[0.732s] Level 5:colcon.colcon_core.verb:set package 'aic_teleoperation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.732s] Level 5:colcon.colcon_core.verb:set package 'aic_teleoperation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.732s] DEBUG:colcon.colcon_core.verb:Building package 'aic_teleoperation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_teleoperation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_teleoperation', 'merge_install': False, 'path': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_utils/aic_teleoperation', 'symlink_install': False, 'test_result_base': None}
+[0.732s] Level 5:colcon.colcon_core.verb:set package 'lerobot_robot_aic' build argument 'cmake_args' from command line to 'None'
+[0.732s] Level 5:colcon.colcon_core.verb:set package 'lerobot_robot_aic' build argument 'cmake_target' from command line to 'None'
+[0.732s] Level 5:colcon.colcon_core.verb:set package 'lerobot_robot_aic' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.732s] Level 5:colcon.colcon_core.verb:set package 'lerobot_robot_aic' build argument 'cmake_clean_cache' from command line to 'True'
+[0.732s] Level 5:colcon.colcon_core.verb:set package 'lerobot_robot_aic' build argument 'cmake_clean_first' from command line to 'False'
+[0.732s] Level 5:colcon.colcon_core.verb:set package 'lerobot_robot_aic' build argument 'cmake_force_configure' from command line to 'False'
+[0.732s] Level 5:colcon.colcon_core.verb:set package 'lerobot_robot_aic' build argument 'ament_cmake_args' from command line to 'None'
+[0.732s] Level 5:colcon.colcon_core.verb:set package 'lerobot_robot_aic' build argument 'catkin_cmake_args' from command line to 'None'
+[0.732s] Level 5:colcon.colcon_core.verb:set package 'lerobot_robot_aic' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.732s] DEBUG:colcon.colcon_core.verb:Building package 'lerobot_robot_aic' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/lerobot_robot_aic', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/lerobot_robot_aic', 'merge_install': False, 'path': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_utils/lerobot_robot_aic', 'symlink_install': False, 'test_result_base': None}
+[0.732s] Level 5:colcon.colcon_core.verb:set package 'aic_adapter' build argument 'cmake_args' from command line to 'None'
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'aic_adapter' build argument 'cmake_target' from command line to 'None'
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'aic_adapter' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'aic_adapter' build argument 'cmake_clean_cache' from command line to 'True'
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'aic_adapter' build argument 'cmake_clean_first' from command line to 'False'
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'aic_adapter' build argument 'cmake_force_configure' from command line to 'False'
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'aic_adapter' build argument 'ament_cmake_args' from command line to 'None'
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'aic_adapter' build argument 'catkin_cmake_args' from command line to 'None'
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'aic_adapter' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.733s] DEBUG:colcon.colcon_core.verb:Building package 'aic_adapter' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_adapter', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_adapter', 'merge_install': False, 'path': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_adapter', 'symlink_install': False, 'test_result_base': None}
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'aic_description' build argument 'cmake_args' from command line to 'None'
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'aic_description' build argument 'cmake_target' from command line to 'None'
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'aic_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'aic_description' build argument 'cmake_clean_cache' from command line to 'True'
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'aic_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'aic_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'aic_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'aic_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.733s] Level 5:colcon.colcon_core.verb:set package 'aic_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.733s] DEBUG:colcon.colcon_core.verb:Building package 'aic_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_description', 'merge_install': False, 'path': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_description', 'symlink_install': False, 'test_result_base': None}
+[0.734s] Level 5:colcon.colcon_core.verb:set package 'aic_engine' build argument 'cmake_args' from command line to 'None'
+[0.734s] Level 5:colcon.colcon_core.verb:set package 'aic_engine' build argument 'cmake_target' from command line to 'None'
+[0.734s] Level 5:colcon.colcon_core.verb:set package 'aic_engine' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.734s] Level 5:colcon.colcon_core.verb:set package 'aic_engine' build argument 'cmake_clean_cache' from command line to 'True'
+[0.734s] Level 5:colcon.colcon_core.verb:set package 'aic_engine' build argument 'cmake_clean_first' from command line to 'False'
+[0.734s] Level 5:colcon.colcon_core.verb:set package 'aic_engine' build argument 'cmake_force_configure' from command line to 'False'
+[0.734s] Level 5:colcon.colcon_core.verb:set package 'aic_engine' build argument 'ament_cmake_args' from command line to 'None'
+[0.734s] Level 5:colcon.colcon_core.verb:set package 'aic_engine' build argument 'catkin_cmake_args' from command line to 'None'
+[0.734s] Level 5:colcon.colcon_core.verb:set package 'aic_engine' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.734s] DEBUG:colcon.colcon_core.verb:Building package 'aic_engine' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_engine', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine', 'merge_install': False, 'path': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_engine', 'symlink_install': False, 'test_result_base': None}
+[0.734s] Level 5:colcon.colcon_core.verb:set package 'aic_model' build argument 'cmake_args' from command line to 'None'
+[0.734s] Level 5:colcon.colcon_core.verb:set package 'aic_model' build argument 'cmake_target' from command line to 'None'
+[0.734s] Level 5:colcon.colcon_core.verb:set package 'aic_model' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.734s] Level 5:colcon.colcon_core.verb:set package 'aic_model' build argument 'cmake_clean_cache' from command line to 'True'
+[0.734s] Level 5:colcon.colcon_core.verb:set package 'aic_model' build argument 'cmake_clean_first' from command line to 'False'
+[0.734s] Level 5:colcon.colcon_core.verb:set package 'aic_model' build argument 'cmake_force_configure' from command line to 'False'
+[0.734s] Level 5:colcon.colcon_core.verb:set package 'aic_model' build argument 'ament_cmake_args' from command line to 'None'
+[0.734s] Level 5:colcon.colcon_core.verb:set package 'aic_model' build argument 'catkin_cmake_args' from command line to 'None'
+[0.734s] Level 5:colcon.colcon_core.verb:set package 'aic_model' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.734s] DEBUG:colcon.colcon_core.verb:Building package 'aic_model' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_model', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_model', 'merge_install': False, 'path': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_model', 'symlink_install': False, 'test_result_base': None}
+[0.735s] Level 5:colcon.colcon_core.verb:set package 'aic_bringup' build argument 'cmake_args' from command line to 'None'
+[0.735s] Level 5:colcon.colcon_core.verb:set package 'aic_bringup' build argument 'cmake_target' from command line to 'None'
+[0.735s] Level 5:colcon.colcon_core.verb:set package 'aic_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.735s] Level 5:colcon.colcon_core.verb:set package 'aic_bringup' build argument 'cmake_clean_cache' from command line to 'True'
+[0.735s] Level 5:colcon.colcon_core.verb:set package 'aic_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.735s] Level 5:colcon.colcon_core.verb:set package 'aic_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.735s] Level 5:colcon.colcon_core.verb:set package 'aic_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.735s] Level 5:colcon.colcon_core.verb:set package 'aic_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.735s] Level 5:colcon.colcon_core.verb:set package 'aic_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.735s] DEBUG:colcon.colcon_core.verb:Building package 'aic_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_bringup', 'merge_install': False, 'path': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.735s] Level 5:colcon.colcon_core.verb:set package 'aic_example_policies' build argument 'cmake_args' from command line to 'None'
+[0.735s] Level 5:colcon.colcon_core.verb:set package 'aic_example_policies' build argument 'cmake_target' from command line to 'None'
+[0.735s] Level 5:colcon.colcon_core.verb:set package 'aic_example_policies' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.735s] Level 5:colcon.colcon_core.verb:set package 'aic_example_policies' build argument 'cmake_clean_cache' from command line to 'True'
+[0.735s] Level 5:colcon.colcon_core.verb:set package 'aic_example_policies' build argument 'cmake_clean_first' from command line to 'False'
+[0.735s] Level 5:colcon.colcon_core.verb:set package 'aic_example_policies' build argument 'cmake_force_configure' from command line to 'False'
+[0.735s] Level 5:colcon.colcon_core.verb:set package 'aic_example_policies' build argument 'ament_cmake_args' from command line to 'None'
+[0.735s] Level 5:colcon.colcon_core.verb:set package 'aic_example_policies' build argument 'catkin_cmake_args' from command line to 'None'
+[0.735s] Level 5:colcon.colcon_core.verb:set package 'aic_example_policies' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.735s] DEBUG:colcon.colcon_core.verb:Building package 'aic_example_policies' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_example_policies', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_example_policies', 'merge_install': False, 'path': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_example_policies', 'symlink_install': False, 'test_result_base': None}
+[0.736s] Level 5:colcon.colcon_core.verb:set package 'aic_mujoco' build argument 'cmake_args' from command line to 'None'
+[0.736s] Level 5:colcon.colcon_core.verb:set package 'aic_mujoco' build argument 'cmake_target' from command line to 'None'
+[0.736s] Level 5:colcon.colcon_core.verb:set package 'aic_mujoco' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.736s] Level 5:colcon.colcon_core.verb:set package 'aic_mujoco' build argument 'cmake_clean_cache' from command line to 'True'
+[0.736s] Level 5:colcon.colcon_core.verb:set package 'aic_mujoco' build argument 'cmake_clean_first' from command line to 'False'
+[0.736s] Level 5:colcon.colcon_core.verb:set package 'aic_mujoco' build argument 'cmake_force_configure' from command line to 'False'
+[0.736s] Level 5:colcon.colcon_core.verb:set package 'aic_mujoco' build argument 'ament_cmake_args' from command line to 'None'
+[0.736s] Level 5:colcon.colcon_core.verb:set package 'aic_mujoco' build argument 'catkin_cmake_args' from command line to 'None'
+[0.736s] Level 5:colcon.colcon_core.verb:set package 'aic_mujoco' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.736s] DEBUG:colcon.colcon_core.verb:Building package 'aic_mujoco' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_mujoco', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_mujoco', 'merge_install': False, 'path': '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_utils/aic_mujoco', 'symlink_install': False, 'test_result_base': None}
+[0.736s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.738s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.739s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_interfaces/aic_control_interfaces' with build type 'ament_cmake'
+[0.739s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_interfaces/aic_control_interfaces'
+[0.741s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.742s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.742s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.749s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_interfaces/aic_engine_interfaces' with build type 'ament_cmake'
+[0.749s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_interfaces/aic_engine_interfaces'
+[0.749s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.749s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.754s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_interfaces/aic_task_interfaces' with build type 'ament_cmake'
+[0.754s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_interfaces/aic_task_interfaces'
+[0.754s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.754s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.758s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_assets' with build type 'ament_cmake'
+[0.759s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_assets'
+[0.759s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.759s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.764s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_utils/aic_isaac/aic_isaaclab/source/aic_task'
+[0.765s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.765s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.770s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/superviser' with build type 'ament_python'
+[0.770s] Level 1:colcon.colcon_core.shell:create_environment_hook('superviser', 'ament_prefix_path')
+[0.770s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/share/superviser/hook/ament_prefix_path.ps1'
+[0.772s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/share/superviser/hook/ament_prefix_path.dsv'
+[0.772s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/share/superviser/hook/ament_prefix_path.sh'
+[0.773s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.773s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.785s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_control_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_interfaces/aic_control_interfaces -DCMAKE_INSTALL_PREFIX=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_control_interfaces
+[0.796s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_engine_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_interfaces/aic_engine_interfaces -DCMAKE_INSTALL_PREFIX=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces
+[0.801s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_interfaces/aic_task_interfaces -DCMAKE_INSTALL_PREFIX=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces
+[0.803s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_assets': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_assets -DCMAKE_INSTALL_PREFIX=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets
+[1.796s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/superviser'
+[1.797s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.797s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.364s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_utils/aic_isaac/aic_isaaclab/source/aic_task': PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] PYTHONPATH=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task/lib/python3.12/site-packages:${PYTHONPATH} XAUTHLOCALHOSTNAME= /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../../build/aic_task build --build-base /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task/build install --record /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task/install.log --single-version-externally-managed
+[2.762s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_assets' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_assets -DCMAKE_INSTALL_PREFIX=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets
+[2.765s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_assets': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake --build /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_assets -- -j20 -l20
+[2.848s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/superviser': PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] PYTHONPATH=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages:${PYTHONPATH} XAUTHLOCALHOSTNAME= /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/superviser build --build-base /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build install --record /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/install.log --single-version-externally-managed install_data
+[3.077s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_assets' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake --build /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_assets -- -j20 -l20
+[3.357s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_assets': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake --install /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_assets
+[3.361s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_utils/aic_isaac/aic_isaaclab/source/aic_task' returned '0': PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] PYTHONPATH=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task/lib/python3.12/site-packages:${PYTHONPATH} XAUTHLOCALHOSTNAME= /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../../build/aic_task build --build-base /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task/build install --record /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task/install.log --single-version-externally-managed
+[3.366s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task' for CMake module files
+[3.367s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task' for CMake config files
+[3.368s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task/lib'
+[3.368s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task/bin'
+[3.368s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task/lib/pkgconfig/aic_task.pc'
+[3.369s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task/lib/python3.12/site-packages'
+[3.369s] Level 1:colcon.colcon_core.shell:create_environment_hook('aic_task', 'pythonpath')
+[3.369s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task/share/aic_task/hook/pythonpath.ps1'
+[3.370s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task/share/aic_task/hook/pythonpath.dsv'
+[3.371s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task/share/aic_task/hook/pythonpath.sh'
+[3.372s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task/bin'
+[3.372s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aic_task)
+[3.373s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task/share/aic_task/package.ps1'
+[3.374s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task/share/aic_task/package.dsv'
+[3.375s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task/share/aic_task/package.sh'
+[3.378s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task/share/aic_task/package.bash'
+[3.379s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task/share/aic_task/package.zsh'
+[3.380s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task/share/colcon-core/packages/aic_task)
+[3.771s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aic_assets)
+[3.771s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_assets' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake --install /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_assets
+[3.772s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets' for CMake module files
+[3.773s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets' for CMake config files
+[3.775s] Level 1:colcon.colcon_core.shell:create_environment_hook('aic_assets', 'cmake_prefix_path')
+[3.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/hook/cmake_prefix_path.ps1'
+[3.776s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/hook/cmake_prefix_path.dsv'
+[3.777s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/hook/cmake_prefix_path.sh'
+[3.778s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/bin'
+[3.779s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/lib/pkgconfig/aic_assets.pc'
+[3.779s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/lib/python3.12/site-packages'
+[3.780s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/bin'
+[3.781s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/package.ps1'
+[3.782s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/package.dsv'
+[3.783s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/package.sh'
+[3.784s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/package.bash'
+[3.784s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/package.zsh'
+[3.785s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/colcon-core/packages/aic_assets)
+[3.786s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aic_assets)
+[3.787s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets' for CMake module files
+[3.788s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets' for CMake config files
+[3.790s] Level 1:colcon.colcon_core.shell:create_environment_hook('aic_assets', 'cmake_prefix_path')
+[3.790s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/hook/cmake_prefix_path.ps1'
+[3.791s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/hook/cmake_prefix_path.dsv'
+[3.792s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/hook/cmake_prefix_path.sh'
+[3.793s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/bin'
+[3.793s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/lib/pkgconfig/aic_assets.pc'
+[3.793s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/lib/python3.12/site-packages'
+[3.794s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/bin'
+[3.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/package.ps1'
+[3.795s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/package.dsv'
+[3.796s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/package.sh'
+[3.797s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/package.bash'
+[3.797s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/package.zsh'
+[3.798s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/colcon-core/packages/aic_assets)
+[3.899s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser' for CMake module files
+[3.901s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/superviser' returned '0': PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] PYTHONPATH=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages:${PYTHONPATH} XAUTHLOCALHOSTNAME= /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/superviser build --build-base /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build install --record /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/install.log --single-version-externally-managed install_data
+[3.902s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser' for CMake config files
+[3.903s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib'
+[3.904s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/bin'
+[3.904s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/pkgconfig/superviser.pc'
+[3.904s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages'
+[3.905s] Level 1:colcon.colcon_core.shell:create_environment_hook('superviser', 'pythonpath')
+[3.905s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/share/superviser/hook/pythonpath.ps1'
+[3.906s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/share/superviser/hook/pythonpath.dsv'
+[3.907s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/share/superviser/hook/pythonpath.sh'
+[3.909s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/bin'
+[3.909s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(superviser)
+[3.909s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/share/superviser/package.ps1'
+[3.910s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/share/superviser/package.dsv'
+[3.911s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/share/superviser/package.sh'
+[3.912s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/share/superviser/package.bash'
+[3.913s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/share/superviser/package.zsh'
+[3.914s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/share/colcon-core/packages/superviser)
+[7.757s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_interfaces/aic_task_interfaces -DCMAKE_INSTALL_PREFIX=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces
+[7.760s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake --build /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task_interfaces -- -j20 -l20
+[8.001s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_engine_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_interfaces/aic_engine_interfaces -DCMAKE_INSTALL_PREFIX=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces
+[8.003s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_engine_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake --build /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_engine_interfaces -- -j20 -l20
+[9.086s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_control_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_interfaces/aic_control_interfaces -DCMAKE_INSTALL_PREFIX=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_control_interfaces
+[9.089s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_control_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake --build /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_control_interfaces -- -j20 -l20
+[15.393s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_engine_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake --build /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_engine_interfaces -- -j20 -l20
+[15.396s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_engine_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake --install /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_engine_interfaces
+[15.936s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aic_engine_interfaces)
+[15.937s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces' for CMake module files
+[15.947s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_engine_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake --install /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_engine_interfaces
+[15.948s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces' for CMake config files
+[15.949s] Level 1:colcon.colcon_core.shell:create_environment_hook('aic_engine_interfaces', 'cmake_prefix_path')
+[15.950s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/hook/cmake_prefix_path.ps1'
+[15.951s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/hook/cmake_prefix_path.dsv'
+[15.952s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/hook/cmake_prefix_path.sh'
+[15.954s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/lib'
+[15.954s] Level 1:colcon.colcon_core.shell:create_environment_hook('aic_engine_interfaces', 'ld_library_path_lib')
+[15.955s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/hook/ld_library_path_lib.ps1'
+[15.956s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/hook/ld_library_path_lib.dsv'
+[15.957s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/hook/ld_library_path_lib.sh'
+[15.958s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/bin'
+[15.958s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/lib/pkgconfig/aic_engine_interfaces.pc'
+[15.959s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/lib/python3.12/site-packages'
+[15.959s] Level 1:colcon.colcon_core.shell:create_environment_hook('aic_engine_interfaces', 'pythonpath')
+[15.960s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/hook/pythonpath.ps1'
+[15.961s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/hook/pythonpath.dsv'
+[15.962s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/hook/pythonpath.sh'
+[15.964s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/bin'
+[15.965s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/package.ps1'
+[15.966s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/package.dsv'
+[15.968s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/package.sh'
+[15.969s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/package.bash'
+[15.970s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/package.zsh'
+[15.970s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/colcon-core/packages/aic_engine_interfaces)
+[15.972s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aic_engine_interfaces)
+[15.972s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces' for CMake module files
+[15.974s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces' for CMake config files
+[15.974s] Level 1:colcon.colcon_core.shell:create_environment_hook('aic_engine_interfaces', 'cmake_prefix_path')
+[15.975s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/hook/cmake_prefix_path.ps1'
+[15.976s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/hook/cmake_prefix_path.dsv'
+[15.977s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/hook/cmake_prefix_path.sh'
+[15.978s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/lib'
+[15.978s] Level 1:colcon.colcon_core.shell:create_environment_hook('aic_engine_interfaces', 'ld_library_path_lib')
+[15.979s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/hook/ld_library_path_lib.ps1'
+[15.981s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/hook/ld_library_path_lib.dsv'
+[15.982s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/hook/ld_library_path_lib.sh'
+[15.983s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/bin'
+[15.983s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/lib/pkgconfig/aic_engine_interfaces.pc'
+[15.984s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/lib/python3.12/site-packages'
+[15.984s] Level 1:colcon.colcon_core.shell:create_environment_hook('aic_engine_interfaces', 'pythonpath')
+[15.985s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/hook/pythonpath.ps1'
+[15.987s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/hook/pythonpath.dsv'
+[15.987s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/hook/pythonpath.sh'
+[15.989s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/bin'
+[15.990s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/package.ps1'
+[15.991s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/package.dsv'
+[15.992s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/package.sh'
+[15.994s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/package.bash'
+[15.995s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/aic_engine_interfaces/package.zsh'
+[15.996s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/share/colcon-core/packages/aic_engine_interfaces)
+[15.997s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_gazebo' with build type 'ament_cmake'
+[15.997s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_gazebo'
+[15.998s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[15.998s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[16.033s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_gazebo': AMENT_PREFIX_PATH=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_ogre_next_vendor:/opt/ros/kilted/opt/gz_dartsim_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default LD_LIBRARY_PATH=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/lib:${LD_LIBRARY_PATH} PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] PYTHONPATH=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/lib/python3.12/site-packages:${PYTHONPATH} XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_gazebo -DCMAKE_INSTALL_PREFIX=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_gazebo
+[17.510s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake --build /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task_interfaces -- -j20 -l20
+[17.514s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake --install /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task_interfaces
+[17.937s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aic_task_interfaces)
+[17.938s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces' for CMake module files
+[17.942s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces' for CMake config files
+[17.943s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake --install /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task_interfaces
+[17.944s] Level 1:colcon.colcon_core.shell:create_environment_hook('aic_task_interfaces', 'cmake_prefix_path')
+[17.944s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/hook/cmake_prefix_path.ps1'
+[17.945s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/hook/cmake_prefix_path.dsv'
+[17.946s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/hook/cmake_prefix_path.sh'
+[17.947s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/lib'
+[17.947s] Level 1:colcon.colcon_core.shell:create_environment_hook('aic_task_interfaces', 'ld_library_path_lib')
+[17.948s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/hook/ld_library_path_lib.ps1'
+[17.949s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/hook/ld_library_path_lib.dsv'
+[17.950s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/hook/ld_library_path_lib.sh'
+[17.950s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/bin'
+[17.951s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/lib/pkgconfig/aic_task_interfaces.pc'
+[17.951s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/lib/python3.12/site-packages'
+[17.952s] Level 1:colcon.colcon_core.shell:create_environment_hook('aic_task_interfaces', 'pythonpath')
+[17.952s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/hook/pythonpath.ps1'
+[17.953s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/hook/pythonpath.dsv'
+[17.954s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/hook/pythonpath.sh'
+[17.955s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/bin'
+[17.956s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/package.ps1'
+[17.957s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/package.dsv'
+[17.958s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/package.sh'
+[17.958s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/package.bash'
+[17.960s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/package.zsh'
+[17.960s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/colcon-core/packages/aic_task_interfaces)
+[17.962s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aic_task_interfaces)
+[17.962s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces' for CMake module files
+[17.963s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces' for CMake config files
+[17.964s] Level 1:colcon.colcon_core.shell:create_environment_hook('aic_task_interfaces', 'cmake_prefix_path')
+[17.964s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/hook/cmake_prefix_path.ps1'
+[17.965s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/hook/cmake_prefix_path.dsv'
+[17.966s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/hook/cmake_prefix_path.sh'
+[17.968s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/lib'
+[17.968s] Level 1:colcon.colcon_core.shell:create_environment_hook('aic_task_interfaces', 'ld_library_path_lib')
+[17.969s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/hook/ld_library_path_lib.ps1'
+[17.970s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/hook/ld_library_path_lib.dsv'
+[17.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/hook/ld_library_path_lib.sh'
+[17.971s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/bin'
+[17.971s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/lib/pkgconfig/aic_task_interfaces.pc'
+[17.972s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/lib/python3.12/site-packages'
+[17.972s] Level 1:colcon.colcon_core.shell:create_environment_hook('aic_task_interfaces', 'pythonpath')
+[17.973s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/hook/pythonpath.ps1'
+[17.975s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/hook/pythonpath.dsv'
+[17.976s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/hook/pythonpath.sh'
+[17.978s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/bin'
+[17.979s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/package.ps1'
+[17.981s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/package.dsv'
+[17.983s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/package.sh'
+[17.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/package.bash'
+[17.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/aic_task_interfaces/package.zsh'
+[17.988s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task_interfaces/share/colcon-core/packages/aic_task_interfaces)
+[18.054s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_gazebo' returned '1': AMENT_PREFIX_PATH=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_ogre_next_vendor:/opt/ros/kilted/opt/gz_dartsim_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default LD_LIBRARY_PATH=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/lib:${LD_LIBRARY_PATH} PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] PYTHONPATH=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_engine_interfaces/lib/python3.12/site-packages:${PYTHONPATH} XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_gazebo -DCMAKE_INSTALL_PREFIX=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_gazebo
+[18.332s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aic_gazebo)
+[18.333s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_gazebo' for CMake module files
+[18.335s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_gazebo' for CMake config files
+[18.336s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_gazebo/bin'
+[18.336s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_gazebo/lib/pkgconfig/aic_gazebo.pc'
+[18.337s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_gazebo/lib/python3.12/site-packages'
+[18.338s] Level 1:colcon.colcon_core.environment:checking '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_gazebo/bin'
+[18.339s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_gazebo/share/aic_gazebo/package.ps1'
+[18.341s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_gazebo/share/aic_gazebo/package.dsv'
+[18.342s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_gazebo/share/aic_gazebo/package.sh'
+[18.344s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_gazebo/share/aic_gazebo/package.bash'
+[18.345s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_gazebo/share/aic_gazebo/package.zsh'
+[18.346s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_gazebo/share/colcon-core/packages/aic_gazebo)
+[19.918s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[19.918s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[19.918s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[19.919s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[19.933s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[19.933s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[19.934s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[19.934s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[19.968s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[19.968s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/local_setup.ps1'
+[19.970s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/_local_setup_util_ps1.py'
+[19.972s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/setup.ps1'
+[19.974s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/local_setup.sh'
+[19.975s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/_local_setup_util_sh.py'
+[19.977s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/setup.sh'
+[19.979s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/local_setup.bash'
+[19.980s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/setup.bash'
+[19.982s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/local_setup.zsh'
+[19.983s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/setup.zsh'

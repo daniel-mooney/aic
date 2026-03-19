@@ -1,0 +1,155 @@
+[0.044s] Invoking command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_assets': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_assets -DCMAKE_INSTALL_PREFIX=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets
+[0.544s] -- The C compiler identification is GNU 13.3.0
+[0.545s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.545s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.545s]   CMake.
+[0.545s] 
+[0.545s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.546s]   to tell CMake that the project requires at least <min> but has been updated
+[0.546s]   to work with policies introduced by <max> or earlier.
+[0.546s] 
+[0.546s] [0m
+[0.634s] -- The CXX compiler identification is GNU 13.3.0
+[0.656s] -- Detecting C compiler ABI info
+[0.797s] -- Detecting C compiler ABI info - done
+[0.847s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.847s] -- Detecting C compile features
+[0.849s] -- Detecting C compile features - done
+[0.880s] -- Detecting CXX compiler ABI info
+[1.029s] -- Detecting CXX compiler ABI info - done
+[1.077s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.078s] -- Detecting CXX compile features
+[1.080s] -- Detecting CXX compile features - done
+[1.107s] -- Found ament_cmake: 2.7.4 (/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/share/ament_cmake/cmake)
+[1.419s] -- Found Python3: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/python3 (found version "3.12.12") found components: Interpreter
+[1.984s] -- Configuring done (1.6s)
+[1.991s] -- Generating done (0.0s)
+[1.994s] -- Build files have been written to: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_assets
+[2.002s] Invoked command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_assets' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_assets -DCMAKE_INSTALL_PREFIX=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets
+[2.006s] Invoking command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_assets': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake --build /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_assets -- -j20 -l20
+[2.318s] Invoked command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_assets' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake --build /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_assets -- -j20 -l20
+[2.597s] Invoking command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_assets': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake --install /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_assets
+[2.861s] -- Install configuration: ""
+[2.861s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/environment/aic_assets.dsv
+[2.862s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models
+[2.862s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/LC Mount
+[2.862s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/LC Mount/lc_mount_macro.xacro
+[2.863s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/LC Mount/model.config
+[2.863s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/LC Mount/lc_mount_visual.glb
+[2.863s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/LC Mount/model.sdf
+[2.863s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/NIC Card Mount
+[2.863s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/NIC Card Mount/nic_card_mount_visual.glb
+[2.864s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/NIC Card Mount/model.config
+[2.864s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/NIC Card Mount/nic_card_mount_macro.xacro
+[2.864s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/NIC Card Mount/nic_card_visual.glb
+[2.886s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/NIC Card Mount/model.sdf
+[2.886s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Enclosure Walls
+[2.886s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Enclosure Walls/enclosure_walls_visual.glb
+[2.887s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Enclosure Walls/model.config
+[2.887s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Enclosure Walls/model.sdf
+[2.887s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Basler Camera
+[2.887s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Basler Camera/model.config
+[2.887s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Basler Camera/basler_cam_visual.glb
+[2.889s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Basler Camera/basler_camera_macro.xacro
+[2.889s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Basler Camera/model.sdf
+[2.889s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/lc_cable
+[2.889s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/lc_cable/model.config
+[2.889s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/lc_cable/model.sdf
+[2.889s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Task Board Base
+[2.890s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Task Board Base/model.config
+[2.890s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Task Board Base/task_board_base_macro.xacro
+[2.890s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Task Board Base/model.sdf
+[2.890s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Task Board Base/base_visual.glb
+[2.891s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/SFP Mount
+[2.891s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/SFP Mount/model.config
+[2.891s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/SFP Mount/model.sdf
+[2.892s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/SFP Mount/sfp_mount_macro.xacro
+[2.892s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/SFP Mount/sfp_mount_visual.glb
+[2.892s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/SC Plug
+[2.892s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/SC Plug/sc_plug_visual.glb
+[2.907s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/SC Plug/model.config
+[2.908s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/SC Plug/model.sdf
+[2.908s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/sfp_sc_cable_reversed
+[2.908s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/sfp_sc_cable_reversed/model.config
+[2.908s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/sfp_sc_cable_reversed/model.sdf
+[2.909s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/SFP Module
+[2.909s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/SFP Module/sfp_module_visual.glb
+[2.929s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/SFP Module/model.config
+[2.929s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/SFP Module/model.sdf
+[2.930s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/SC Port
+[2.930s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/SC Port/sc_port_visual.glb
+[2.948s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/SC Port/sc_port_macro.xacro
+[2.948s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/SC Port/model.config
+[2.948s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/SC Port/model.sdf
+[2.948s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/cable_base_c_rotated_reversed
+[2.949s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/cable_base_c_rotated_reversed/model.config
+[2.949s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/cable_base_c_rotated_reversed/model.sdf
+[2.949s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/sc_cable
+[2.949s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/sc_cable/model.config
+[2.950s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/sc_cable/model.sdf
+[2.950s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/NIC Card
+[2.950s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/NIC Card/model.config
+[2.950s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/NIC Card/nic_card_visual.glb
+[2.972s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/NIC Card/model.sdf
+[2.972s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/cable_base_c_rotated
+[2.972s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/cable_base_c_rotated/model.config
+[2.973s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/cable_base_c_rotated/model.sdf
+[2.973s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/sfp_sc_cable
+[2.973s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/sfp_sc_cable/model.config
+[2.973s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/sfp_sc_cable/model.sdf
+[2.973s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/lc_sc_cable
+[2.974s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/lc_sc_cable/model.config
+[2.974s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/lc_sc_cable/model.sdf
+[2.974s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Enclosure
+[2.974s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Enclosure/light_visual.glb
+[2.974s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Enclosure/model.config
+[2.975s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Enclosure/enclosure_visual.glb
+[2.979s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Enclosure/enclosurewalls_visual.glb
+[2.980s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Enclosure/model.sdf
+[2.980s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/SC Mount
+[2.980s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/SC Mount/model.config
+[2.980s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/SC Mount/sc_mount_visual.glb
+[2.981s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/SC Mount/model.sdf
+[2.981s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/SC Mount/sc_mount_macro.xacro
+[2.981s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Robotiq Hand-E
+[2.981s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Robotiq Hand-E/hande_base_visual.glb
+[2.982s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Robotiq Hand-E/model.config
+[2.982s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Robotiq Hand-E/hande_finger_visual.glb
+[2.982s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Robotiq Hand-E/robotiq_hande.ros2_control.xacro
+[2.983s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Robotiq Hand-E/robotiq_hande_macro.xacro
+[2.983s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Robotiq Hand-E/model.sdf
+[2.983s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Axia80 M20
+[2.983s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Axia80 M20/model.config
+[2.984s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Axia80 M20/axia_ft_sensor_visual.glb
+[2.984s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Axia80 M20/axia80_m20_macro.xacro
+[2.984s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Axia80 M20/model.sdf
+[2.984s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Camera Mount
+[2.984s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Camera Mount/cam_mount_visual.glb
+[2.985s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Camera Mount/model.config
+[2.985s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Camera Mount/cam_mount_macro.xacro
+[2.985s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Camera Mount/model.sdf
+[2.985s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/LC Plug
+[2.985s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/LC Plug/lc_plug_visual.glb
+[2.997s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/LC Plug/model.config
+[2.997s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/LC Plug/model.sdf
+[2.997s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Floor
+[2.998s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Floor/walls_visual.glb
+[2.998s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Floor/floor_visual.glb
+[3.006s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Floor/model.config
+[3.007s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/models/Floor/model.sdf
+[3.007s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/ament_index/resource_index/package_run_dependencies/aic_assets
+[3.007s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/ament_index/resource_index/parent_prefix_path/aic_assets
+[3.007s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/environment/ament_prefix_path.sh
+[3.008s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/environment/ament_prefix_path.dsv
+[3.008s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/environment/path.sh
+[3.008s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/environment/path.dsv
+[3.009s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/local_setup.bash
+[3.009s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/local_setup.sh
+[3.009s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/local_setup.zsh
+[3.009s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/local_setup.dsv
+[3.009s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/package.dsv
+[3.010s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/ament_index/resource_index/packages/aic_assets
+[3.010s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/cmake/aic_assetsConfig.cmake
+[3.010s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/cmake/aic_assetsConfig-version.cmake
+[3.010s] -- Installing: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_assets/share/aic_assets/package.xml
+[3.012s] Invoked command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_assets' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake --install /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_assets

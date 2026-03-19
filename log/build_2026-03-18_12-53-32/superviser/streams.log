@@ -1,0 +1,59 @@
+[2.076s] Invoking command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/superviser': PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] PYTHONPATH=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages:${PYTHONPATH} XAUTHLOCALHOSTNAME= /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/superviser build --build-base /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build install --record /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/install.log --single-version-externally-managed install_data
+[2.732s] running egg_info
+[2.773s] creating ../build/superviser/superviser.egg-info
+[2.773s] writing ../build/superviser/superviser.egg-info/PKG-INFO
+[2.774s] writing dependency_links to ../build/superviser/superviser.egg-info/dependency_links.txt
+[2.775s] writing requirements to ../build/superviser/superviser.egg-info/requires.txt
+[2.775s] writing top-level names to ../build/superviser/superviser.egg-info/top_level.txt
+[2.775s] writing manifest file '../build/superviser/superviser.egg-info/SOURCES.txt'
+[2.866s] reading manifest file '../build/superviser/superviser.egg-info/SOURCES.txt'
+[2.868s] writing manifest file '../build/superviser/superviser.egg-info/SOURCES.txt'
+[2.868s] running build
+[2.868s] running build_py
+[2.869s] creating /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser
+[2.869s] copying superviser/__init__.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser
+[2.869s] copying superviser/rrt_policy.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser
+[2.869s] creating /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner
+[2.869s] copying superviser/planner/sampler.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner
+[2.869s] copying superviser/planner/__init__.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner
+[2.870s] copying superviser/planner/types.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner
+[2.870s] copying superviser/planner/interpolater.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner
+[2.870s] copying superviser/planner/planner.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner
+[2.870s] copying superviser/planner/collision_checker.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner
+[2.870s] copying superviser/planner/rrt.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner
+[2.871s] copying superviser/planner/indexer.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner
+[2.871s] copying superviser/py.typed -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser
+[2.872s] running install
+[2.882s] running install_lib
+[2.927s] creating /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser
+[2.927s] copying /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/py.typed -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser
+[2.928s] copying /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/__init__.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser
+[2.928s] copying /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/rrt_policy.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser
+[2.928s] creating /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser/planner
+[2.928s] copying /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner/sampler.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser/planner
+[2.929s] copying /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner/__init__.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser/planner
+[2.929s] copying /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner/types.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser/planner
+[2.929s] copying /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner/interpolater.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser/planner
+[2.929s] copying /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner/planner.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser/planner
+[2.929s] copying /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner/collision_checker.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser/planner
+[2.930s] copying /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner/rrt.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser/planner
+[2.930s] copying /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner/indexer.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser/planner
+[2.930s] byte-compiling /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser/__init__.py to __init__.cpython-312.pyc
+[2.930s] byte-compiling /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser/rrt_policy.py to rrt_policy.cpython-312.pyc
+[2.931s] byte-compiling /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser/planner/sampler.py to sampler.cpython-312.pyc
+[2.932s] byte-compiling /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser/planner/__init__.py to __init__.cpython-312.pyc
+[2.932s] byte-compiling /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser/planner/types.py to types.cpython-312.pyc
+[2.932s] byte-compiling /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser/planner/interpolater.py to interpolater.cpython-312.pyc
+[2.932s] byte-compiling /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser/planner/planner.py to planner.cpython-312.pyc
+[2.933s] byte-compiling /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser/planner/collision_checker.py to collision_checker.cpython-312.pyc
+[2.936s] byte-compiling /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser/planner/rrt.py to rrt.cpython-312.pyc
+[2.937s] byte-compiling /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser/planner/indexer.py to indexer.cpython-312.pyc
+[2.939s] running install_data
+[2.940s] creating /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/share/ament_index/resource_index/packages
+[2.940s] copying resource/superviser -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/share/ament_index/resource_index/packages
+[2.940s] copying package.xml -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/share/superviser
+[2.940s] running install_egg_info
+[2.983s] Copying ../build/superviser/superviser.egg-info to /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser-0.0.0-py3.12.egg-info
+[2.984s] running install_scripts
+[3.075s] writing list of installed files to '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/install.log'
+[3.129s] Invoked command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/superviser' returned '0': PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] PYTHONPATH=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages:${PYTHONPATH} XAUTHLOCALHOSTNAME= /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/superviser build --build-base /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build install --record /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/install.log --single-version-externally-managed install_data

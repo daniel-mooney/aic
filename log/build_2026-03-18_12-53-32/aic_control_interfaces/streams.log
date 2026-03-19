@@ -1,0 +1,156 @@
+[0.046s] Invoking command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_control_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_interfaces/aic_control_interfaces -DCMAKE_INSTALL_PREFIX=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_control_interfaces
+[0.556s] -- The C compiler identification is GNU 13.3.0
+[0.557s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.558s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.559s]   CMake.
+[0.559s] 
+[0.560s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.560s]   to tell CMake that the project requires at least <min> but has been updated
+[0.560s]   to work with policies introduced by <max> or earlier.
+[0.560s] 
+[0.561s] [0m
+[0.638s] -- The CXX compiler identification is GNU 13.3.0
+[0.663s] -- Detecting C compiler ABI info
+[0.802s] -- Detecting C compiler ABI info - done
+[0.840s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.841s] -- Detecting C compile features
+[0.842s] -- Detecting C compile features - done
+[0.874s] -- Detecting CXX compiler ABI info
+[1.021s] -- Detecting CXX compiler ABI info - done
+[1.063s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.064s] -- Detecting CXX compile features
+[1.066s] -- Detecting CXX compile features - done
+[1.092s] -- Found ament_cmake: 2.7.4 (/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/share/ament_cmake/cmake)
+[1.417s] -- Found Python3: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/python3 (found version "3.12.12") found components: Interpreter
+[1.745s] -- Found builtin_interfaces: 2.3.0 (/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/share/builtin_interfaces/cmake)
+[1.866s] -- Found rosidl_generator_c: 4.9.6 (/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/share/rosidl_generator_c/cmake)
+[1.944s] -- Found rosidl_generator_cpp: 4.9.6 (/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/share/rosidl_generator_cpp/cmake)
+[2.013s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.098s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.167s] -- Found geometry_msgs: 5.5.1 (/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/share/geometry_msgs/cmake)
+[2.345s] -- Found rosidl_default_generators: 1.7.1 (/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/share/rosidl_default_generators/cmake)
+[2.416s] -- Found rosidl_adapter: 4.9.6 (/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/share/rosidl_adapter/cmake)
+[2.432s] -- Found trajectory_msgs: 5.5.1 (/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/share/trajectory_msgs/cmake)
+[4.004s] -- Found ament_cmake_cppcheck: 0.19.2 (/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/share/ament_cmake_cppcheck/cmake)
+[4.015s] -- Found ament_cmake_cpplint: 0.19.2 (/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/share/ament_cmake_cpplint/cmake)
+[4.025s] -- Found ament_cmake_uncrustify: 0.19.2 (/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/share/ament_cmake_uncrustify/cmake)
+[4.036s] -- Found ament_cmake_ros_core: 0.14.7 (/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/share/ament_cmake_ros_core/cmake)
+[5.980s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.912s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.926s] -- Found Python3: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/python3 (found version "3.12.12") found components: Interpreter Development NumPy Development.Module Development.Embed
+[8.146s] -- Found ament_cmake_flake8: 0.19.2 (/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/share/ament_cmake_flake8/cmake)
+[8.160s] -- Found ament_cmake_pep257: 0.19.2 (/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/share/ament_cmake_pep257/cmake)
+[8.175s] -- Configuring done (7.8s)
+[8.306s] -- Generating done (0.1s)
+[8.328s] -- Build files have been written to: /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_control_interfaces
+[8.347s] Invoked command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_control_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_interfaces/aic_control_interfaces -DCMAKE_INSTALL_PREFIX=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_control_interfaces
+[8.349s] Invoking command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_control_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] XAUTHLOCALHOSTNAME= /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/.pixi/envs/default/bin/cmake --build /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_control_interfaces -- -j20 -l20
+[8.682s] [  1%] [1m[34mGenerating type hashes for ROS interfaces[0m
+[8.689s] [  1%] Built target ament_cmake_python_copy_aic_control_interfaces
+[9.199s] running egg_info
+[9.258s] creating aic_control_interfaces.egg-info
+[9.259s] writing aic_control_interfaces.egg-info/PKG-INFO
+[9.259s] writing dependency_links to aic_control_interfaces.egg-info/dependency_links.txt
+[9.260s] writing top-level names to aic_control_interfaces.egg-info/top_level.txt
+[9.260s] writing manifest file 'aic_control_interfaces.egg-info/SOURCES.txt'
+[9.431s] reading manifest file 'aic_control_interfaces.egg-info/SOURCES.txt'
+[9.433s] writing manifest file 'aic_control_interfaces.egg-info/SOURCES.txt'
+[9.491s] [  1%] Built target ament_cmake_python_build_aic_control_interfaces_egg
+[9.542s] [  1%] Built target aic_control_interfaces__rosidl_generator_type_description
+[9.557s] [  2%] [1m[34mGenerating C code for ROS interfaces[0m
+[9.577s] [  3%] [1m[34mGenerating C++ code for ROS interfaces[0m
+[11.172s] [  4%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aic_control_interfaces/msg/detail/controller_state__description.c.o[0m
+[11.172s] [  5%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aic_control_interfaces/msg/detail/controller_state__functions.c.o[0m
+[11.174s] [  8%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aic_control_interfaces/msg/detail/controller_state__type_support.c.o[0m
+[11.175s] [  8%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aic_control_interfaces/msg/detail/joint_motion_update__description.c.o[0m
+[11.175s] [  9%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aic_control_interfaces/msg/detail/joint_motion_update__functions.c.o[0m
+[11.177s] [ 10%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aic_control_interfaces/msg/detail/joint_motion_update__type_support.c.o[0m
+[11.178s] [ 11%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aic_control_interfaces/msg/detail/motion_update__description.c.o[0m
+[11.178s] [ 13%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aic_control_interfaces/msg/detail/motion_update__functions.c.o[0m
+[11.180s] [ 14%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aic_control_interfaces/msg/detail/motion_update__type_support.c.o[0m
+[11.181s] [ 15%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aic_control_interfaces/msg/detail/target_mode__description.c.o[0m
+[11.187s] [ 16%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aic_control_interfaces/msg/detail/target_mode__functions.c.o[0m
+[11.218s] [ 17%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aic_control_interfaces/msg/detail/trajectory_generation_mode__description.c.o[0m
+[11.220s] [ 19%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aic_control_interfaces/msg/detail/target_mode__type_support.c.o[0m
+[11.227s] [ 20%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aic_control_interfaces/msg/detail/trajectory_generation_mode__functions.c.o[0m
+[11.233s] [ 21%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aic_control_interfaces/msg/detail/trajectory_generation_mode__type_support.c.o[0m
+[11.239s] [ 22%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aic_control_interfaces/srv/detail/change_target_mode__description.c.o[0m
+[11.266s] [ 23%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aic_control_interfaces/srv/detail/change_target_mode__functions.c.o[0m
+[11.274s] [ 25%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aic_control_interfaces/srv/detail/change_target_mode__type_support.c.o[0m
+[11.467s] [ 25%] Built target aic_control_interfaces__cpp
+[11.544s] [ 26%] [1m[32mLinking C shared library libaic_control_interfaces__rosidl_generator_c.so[0m
+[11.632s] [ 26%] Built target aic_control_interfaces__rosidl_generator_c
+[11.646s] [ 27%] [1m[34mGenerating C++ introspection for ROS interfaces[0m
+[11.648s] [ 28%] [1m[34mGenerating C++ type support for eProsima Fast-RTPS[0m
+[11.648s] [ 30%] [1m[34mGenerating C type support for eProsima Fast-RTPS[0m
+[11.648s] [ 30%] [1m[34mGenerating C type support dispatch for ROS interfaces[0m
+[11.649s] [ 32%] [1m[34mGenerating C introspection for ROS interfaces[0m
+[11.650s] [ 33%] [1m[34mGenerating C++ type support dispatch for ROS interfaces[0m
+[12.649s] [ 34%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aic_control_interfaces/msg/controller_state__type_support.cpp.o[0m
+[12.652s] [ 35%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aic_control_interfaces/msg/joint_motion_update__type_support.cpp.o[0m
+[12.652s] [ 36%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aic_control_interfaces/msg/motion_update__type_support.cpp.o[0m
+[12.653s] [ 39%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aic_control_interfaces/srv/change_target_mode__type_support.cpp.o[0m
+[12.653s] [ 39%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aic_control_interfaces/msg/target_mode__type_support.cpp.o[0m
+[12.654s] [ 40%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aic_control_interfaces/msg/trajectory_generation_mode__type_support.cpp.o[0m
+[12.968s] [ 41%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aic_control_interfaces/msg/detail/dds_fastrtps/controller_state__type_support.cpp.o[0m
+[12.969s] [ 42%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aic_control_interfaces/msg/detail/dds_fastrtps/joint_motion_update__type_support.cpp.o[0m
+[12.969s] [ 44%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aic_control_interfaces/msg/detail/dds_fastrtps/motion_update__type_support.cpp.o[0m
+[12.970s] [ 45%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aic_control_interfaces/msg/detail/dds_fastrtps/trajectory_generation_mode__type_support.cpp.o[0m
+[12.970s] [ 46%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aic_control_interfaces/srv/detail/dds_fastrtps/change_target_mode__type_support.cpp.o[0m
+[12.971s] [ 47%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aic_control_interfaces/msg/detail/dds_fastrtps/target_mode__type_support.cpp.o[0m
+[12.997s] [ 48%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aic_control_interfaces/msg/controller_state__type_support.cpp.o[0m
+[12.999s] [ 50%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aic_control_interfaces/msg/motion_update__type_support.cpp.o[0m
+[13.002s] [ 51%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aic_control_interfaces/msg/joint_motion_update__type_support.cpp.o[0m
+[13.008s] [ 52%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aic_control_interfaces/msg/target_mode__type_support.cpp.o[0m
+[13.012s] [ 53%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aic_control_interfaces/msg/trajectory_generation_mode__type_support.cpp.o[0m
+[13.155s] [ 54%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aic_control_interfaces/srv/change_target_mode__type_support.cpp.o[0m
+[13.275s] [ 55%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aic_control_interfaces/msg/detail/controller_state__type_support.c.o[0m
+[13.277s] [ 57%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aic_control_interfaces/msg/detail/joint_motion_update__type_support.c.o[0m
+[13.283s] [ 58%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aic_control_interfaces/msg/detail/motion_update__type_support.c.o[0m
+[13.292s] [ 59%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aic_control_interfaces/msg/detail/target_mode__type_support.c.o[0m
+[13.296s] [ 60%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aic_control_interfaces/msg/detail/controller_state__type_support.cpp.o[0m
+[13.296s] [ 61%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aic_control_interfaces/msg/detail/trajectory_generation_mode__type_support.c.o[0m
+[13.352s] [ 63%] [1m[32mLinking CXX shared library libaic_control_interfaces__rosidl_typesupport_c.so[0m
+[13.480s] [ 64%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aic_control_interfaces/srv/detail/change_target_mode__type_support.c.o[0m
+[13.487s] [ 65%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aic_control_interfaces/msg/detail/joint_motion_update__type_support.cpp.o[0m
+[13.495s] [ 66%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aic_control_interfaces/msg/detail/motion_update__type_support.cpp.o[0m
+[13.496s] [ 67%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aic_control_interfaces/msg/detail/target_mode__type_support.cpp.o[0m
+[13.527s] [ 69%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aic_control_interfaces/msg/detail/trajectory_generation_mode__type_support.cpp.o[0m
+[13.536s] [ 70%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aic_control_interfaces/srv/detail/change_target_mode__type_support.cpp.o[0m
+[13.543s] [ 70%] Built target aic_control_interfaces__rosidl_typesupport_c
+[13.556s] [ 71%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aic_control_interfaces/msg/detail/controller_state__type_support_c.cpp.o[0m
+[13.568s] [ 72%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aic_control_interfaces/msg/detail/joint_motion_update__type_support_c.cpp.o[0m
+[13.580s] [ 73%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aic_control_interfaces/msg/detail/motion_update__type_support_c.cpp.o[0m
+[13.665s] [ 75%] [1m[32mLinking C shared library libaic_control_interfaces__rosidl_typesupport_introspection_c.so[0m
+[13.787s] [ 76%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aic_control_interfaces/msg/detail/trajectory_generation_mode__type_support_c.cpp.o[0m
+[13.809s] [ 77%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aic_control_interfaces/srv/detail/change_target_mode__type_support_c.cpp.o[0m
+[13.813s] [ 77%] Built target aic_control_interfaces__rosidl_typesupport_introspection_c
+[13.829s] [ 78%] [1m[32mLinking CXX shared library libaic_control_interfaces__rosidl_typesupport_cpp.so[0m
+[13.846s] [ 79%] [32mBuilding CXX object CMakeFiles/aic_control_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aic_control_interfaces/msg/detail/target_mode__type_support_c.cpp.o[0m
+[14.347s] [ 79%] Built target aic_control_interfaces__rosidl_typesupport_cpp
+[14.967s] [ 80%] [1m[32mLinking CXX shared library libaic_control_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[15.149s] [ 80%] Built target aic_control_interfaces__rosidl_typesupport_introspection_cpp
+[15.222s] [ 82%] [1m[32mLinking CXX shared library libaic_control_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[15.442s] [ 82%] Built target aic_control_interfaces__rosidl_typesupport_fastrtps_cpp
+[15.912s] [ 83%] [1m[32mLinking CXX shared library libaic_control_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[16.030s] [ 83%] Built target aic_control_interfaces__rosidl_typesupport_fastrtps_c
+[16.059s] [ 83%] Built target aic_control_interfaces
+[16.098s] [ 84%] [1m[34mGenerating Python code for ROS interfaces[0m
+[18.193s] [ 84%] Built target aic_control_interfaces__py
+[18.218s] [ 85%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aic_control_interfaces/msg/_joint_motion_update_s.c.o[0m
+[18.218s] [ 86%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aic_control_interfaces/msg/_controller_state_s.c.o[0m
+[18.220s] [ 88%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aic_control_interfaces/msg/_motion_update_s.c.o[0m
+[18.220s] [ 90%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aic_control_interfaces/srv/_change_target_mode_s.c.o[0m
+[18.221s] [ 90%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aic_control_interfaces/msg/_target_mode_s.c.o[0m
+[18.221s] [ 91%] [32mBuilding C object CMakeFiles/aic_control_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aic_control_interfaces/msg/_trajectory_generation_mode_s.c.o[0m
+[18.713s] [ 92%] [1m[32mLinking C shared library libaic_control_interfaces__rosidl_generator_py.so[0m
+[18.806s] [ 92%] Built target aic_control_interfaces__rosidl_generator_py
+[18.831s] [ 94%] [32mBuilding C object CMakeFiles/aic_control_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/aic_control_interfaces/_aic_control_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[18.831s] [ 95%] [32mBuilding C object CMakeFiles/aic_control_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/aic_control_interfaces/_aic_control_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[18.833s] [ 96%] [32mBuilding C object CMakeFiles/aic_control_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/aic_control_interfaces/_aic_control_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[19.085s] [ 97%] [1m[32mLinking C shared module rosidl_generator_py/aic_control_interfaces/aic_control_interfaces_s__rosidl_typesupport_c.so[0m
+[19.095s] [ 98%] [1m[32mLinking C shared module rosidl_generator_py/aic_control_interfaces/aic_control_interfaces_s__rosidl_typesupport_introspection_c.so[0m
+[19.108s] [100%] [1m[32mLinking C shared module rosidl_generator_py/aic_control_interfaces/aic_control_interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[19.130s] [100%] Built target aic_control_interfaces_s__rosidl_typesupport_c
+[19.143s] [100%] Built target aic_control_interfaces_s__rosidl_typesupport_introspection_c
+[19.157s] [100%] Built target aic_control_interfaces_s__rosidl_typesupport_fastrtps_c

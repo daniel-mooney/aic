@@ -5,5 +5,10 @@
     ],
     "exclude": [
         "**/build"
-    ]
+    ],
+	"extraPaths": [
+		"aic_model",
+		"/opt/ros/kilted/lib/python3.12/site-packages",
+		".pixi/envs/default/lib/python3.12/site-packages"
+	]
 }

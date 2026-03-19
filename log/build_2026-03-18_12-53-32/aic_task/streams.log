@@ -1,0 +1,27 @@
+[1.598s] Invoking command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_utils/aic_isaac/aic_isaaclab/source/aic_task': PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] PYTHONPATH=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task/lib/python3.12/site-packages:${PYTHONPATH} XAUTHLOCALHOSTNAME= /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../../build/aic_task build --build-base /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task/build install --record /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task/install.log --single-version-externally-managed
+[2.193s] running egg_info
+[2.235s] creating ../../../../../build/aic_task/aic_task.egg-info
+[2.236s] writing ../../../../../build/aic_task/aic_task.egg-info/PKG-INFO
+[2.236s] writing dependency_links to ../../../../../build/aic_task/aic_task.egg-info/dependency_links.txt
+[2.237s] writing requirements to ../../../../../build/aic_task/aic_task.egg-info/requires.txt
+[2.237s] writing top-level names to ../../../../../build/aic_task/aic_task.egg-info/top_level.txt
+[2.237s] writing manifest file '../../../../../build/aic_task/aic_task.egg-info/SOURCES.txt'
+[2.327s] reading manifest file '../../../../../build/aic_task/aic_task.egg-info/SOURCES.txt'
+[2.329s] writing manifest file '../../../../../build/aic_task/aic_task.egg-info/SOURCES.txt'
+[2.329s] running build
+[2.330s] running build_py
+[2.330s] creating /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task/build/lib/aic_task
+[2.330s] copying aic_task/__init__.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task/build/lib/aic_task
+[2.331s] copying aic_task/extension.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task/build/lib/aic_task
+[2.332s] running install
+[2.345s] running install_lib
+[2.389s] creating /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task/lib/python3.12/site-packages/aic_task
+[2.389s] copying /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task/build/lib/aic_task/__init__.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task/lib/python3.12/site-packages/aic_task
+[2.389s] copying /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task/build/lib/aic_task/extension.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task/lib/python3.12/site-packages/aic_task
+[2.390s] byte-compiling /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task/lib/python3.12/site-packages/aic_task/__init__.py to __init__.cpython-312.pyc
+[2.391s] byte-compiling /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task/lib/python3.12/site-packages/aic_task/extension.py to extension.cpython-312.pyc
+[2.396s] running install_egg_info
+[2.440s] Copying ../../../../../build/aic_task/aic_task.egg-info to /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task/lib/python3.12/site-packages/aic_task-0.1.0-py3.12.egg-info
+[2.442s] running install_scripts
+[2.532s] writing list of installed files to '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task/install.log'
+[2.595s] Invoked command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/aic_utils/aic_isaac/aic_isaaclab/source/aic_task' returned '0': PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] PYTHONPATH=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/aic_task/lib/python3.12/site-packages:${PYTHONPATH} XAUTHLOCALHOSTNAME= /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../../build/aic_task build --build-base /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task/build install --record /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/aic_task/install.log --single-version-externally-managed

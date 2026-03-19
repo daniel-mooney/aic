@@ -1,0 +1,34 @@
+[2.597s] Invoking command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/superviser': PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][✘!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] PYTHONPATH=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages:${PYTHONPATH} XAUTHLOCALHOSTNAME= /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/superviser build --build-base /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build install --record /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/install.log --single-version-externally-managed install_data
+[3.582s] running egg_info
+[3.650s] writing ../build/superviser/superviser.egg-info/PKG-INFO
+[3.652s] writing dependency_links to ../build/superviser/superviser.egg-info/dependency_links.txt
+[3.653s] writing requirements to ../build/superviser/superviser.egg-info/requires.txt
+[3.653s] writing top-level names to ../build/superviser/superviser.egg-info/top_level.txt
+[3.791s] reading manifest file '../build/superviser/superviser.egg-info/SOURCES.txt'
+[3.804s] writing manifest file '../build/superviser/superviser.egg-info/SOURCES.txt'
+[3.805s] running build
+[3.806s] running build_py
+[3.807s] copying superviser/__init__.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser
+[3.807s] copying superviser/rrt_policy.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser
+[3.807s] copying superviser/planner/sampler.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner
+[3.808s] copying superviser/planner/__init__.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner
+[3.809s] copying superviser/planner/types.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner
+[3.809s] copying superviser/planner/interpolater.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner
+[3.809s] copying superviser/planner/planner.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner
+[3.809s] copying superviser/planner/collision_checker.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner
+[3.810s] copying superviser/planner/rrt.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner
+[3.810s] copying superviser/planner/indexer.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner
+[3.811s] copying superviser/py.typed -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser
+[3.812s] running install
+[3.830s] running install_lib
+[3.898s] copying /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build/lib/superviser/planner/indexer.py -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser/planner
+[3.900s] byte-compiling /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser/planner/indexer.py to indexer.cpython-312.pyc
+[3.907s] running install_data
+[3.908s] copying resource/superviser -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/share/ament_index/resource_index/packages
+[3.909s] copying package.xml -> /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/share/superviser
+[3.909s] running install_egg_info
+[3.977s] removing '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser-0.0.0-py3.12.egg-info' (and everything under it)
+[3.978s] Copying ../build/superviser/superviser.egg-info to /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages/superviser-0.0.0-py3.12.egg-info
+[3.981s] running install_scripts
+[4.120s] writing list of installed files to '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/install.log'
+[4.212s] Invoked command in '/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/superviser' returned '0': PIXI_PROMPT=(aic) PS1=\[[1;36m\].../aic\[[0m\] on \[[1;35m\] dev\[[0m\] \[[1;31m\][✘!?⇡]\[[0m\] via \[[1;33m\]🧚 v0.65.0 (default) \[[2;31m\]⬢ [Docker]\[[0m\] \[[1;32m\]❯\[[0m\] PYTHONPATH=/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/install/superviser/lib/python3.12/site-packages:${PYTHONPATH} XAUTHLOCALHOSTNAME= /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/superviser build --build-base /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/build install --record /home/daniel-mooney/Documents/Projects/Intrinsic/ws_aic/src/aic/build/superviser/install.log --single-version-externally-managed install_data
