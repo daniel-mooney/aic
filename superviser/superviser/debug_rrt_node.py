@@ -6,11 +6,10 @@ from geometry_msgs.msg import Point, TransformStamped
 from tf2_ros.static_transform_broadcaster import StaticTransformBroadcaster
 
 import numpy as np
-import time
 
 from superviser.planner import RRT
 from superviser.planner.collision_checker import StraightCollisionChecker, RectangularObstacle2d
-from superviser.planner.sampler import UniformEuclieanSampler
+from superviser.planner.sampler import State, UniformEuclieanSampler
 from superviser.planner.indexer import KDTree
 
 
@@ -204,6 +203,59 @@ class RRTTester(Node):
 
         self._marker_pub.publish(line)
 
+    def draw_path(self, path: list[State]) -> None:
+        points = [Point(x=xi, y=yi) for xi, yi in path]
+
+        # Send points message
+        point_marker = Marker()
+        point_marker.header.frame_id = "base_link"
+        point_marker.header.stamp = self.get_clock().now().to_msg()
+
+        point_marker.id = self.marker_id
+        self.marker_id += 1
+
+        point_marker.type = Marker.SPHERE_LIST
+        point_marker.action = Marker.ADD
+
+        point_marker.pose.orientation.w = 1.0
+
+        point_marker.points = points
+
+        size = 0.05
+        point_marker.scale.x = size
+        point_marker.scale.y = size
+        point_marker.scale.z = size
+
+        point_marker.color.r = 1.0
+        point_marker.color.g = 1.0
+        point_marker.color.b = 1.0
+        point_marker.color.a = 1.0
+
+        self._marker_pub.publish(point_marker)
+
+        # Send lines message
+        path_marker = Marker()
+        path_marker.header.frame_id = "base_link"
+        path_marker.header.stamp = self.get_clock().now().to_msg()
+
+        path_marker.id = self.marker_id
+        self.marker_id += 1
+
+        path_marker.type = Marker.LINE_STRIP
+        path_marker.action = Marker.ADD
+
+        path_marker.pose.orientation.w = 1.0
+        path_marker.points = points
+
+        path_marker.scale.x = 0.03
+
+        path_marker.color.r = 0.0
+        path_marker.color.g = 0.0
+        path_marker.color.b = 1.0
+        path_marker.color.a = 1.0
+
+        self._marker_pub.publish(path_marker)
+
     def find_path(self) -> None:
         start = np.array([1.0, 5.0])
         goal = np.array([9.0, 4.0])
@@ -212,15 +264,7 @@ class RRTTester(Node):
         path = self._rrt.plan(start, goal)
         self.get_logger().info(f"Found plan (len={len(path)})")
 
-        # Write path to rviz
-        for i, v in enumerate(path[:-1]):
-            self.draw_point(v)
-
-            next_v = path[i+1]
-            self.draw_edge(v, next_v)
-            time.sleep(0.05)
-
-        self.draw_point(path[-1])            
+        self.draw_path(path)
 
         self.run_timer.cancel()
 
