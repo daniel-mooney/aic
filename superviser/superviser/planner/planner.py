@@ -59,11 +59,11 @@ class RRT(Planner):
         # TODO: possible max iterations
         while self._indexer.distance(last_state, goal) >= self._max_radius or self._collision_checker.contains_edge(last_state, goal):
             # Randomly see if you can connect the goal to some node
-            check_goal = random.random() < 0.01
+            check_goal = random.random() < 0.05
             if check_goal:
                 dist, nearest, _ = self._indexer.knearest(goal)[0]
 
-                if dist < self._max_radius and not self._collision_checker.contains_edge(nearest, goal):
+                if not self._collision_checker.contains_edge(nearest, goal):
                     last_state = nearest
                     break
 

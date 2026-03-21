@@ -33,7 +33,7 @@ class RRTTester(Node):
             self._collision_checker,
             self._sampler,
             self._indexer,
-            max_radius=0.3,
+            max_radius=0.1,
         )
 
         # ROS setup
