@@ -2,6 +2,7 @@ from abc import ABC, abstractmethod
 from collections import deque
 import networkx as nx
 import numpy as np
+import random
 
 from superviser.planner.types import State
 from superviser.planner.collision_checker import CollisionChecker
@@ -57,6 +58,15 @@ class RRT(Planner):
         print(f"Init dist: {dist}")
         # TODO: possible max iterations
         while self._indexer.distance(last_state, goal) >= self._max_radius or self._collision_checker.contains_edge(last_state, goal):
+            # Randomly see if you can connect the goal to some node
+            check_goal = random.random() < 0.01
+            if check_goal:
+                dist, nearest, _ = self._indexer.knearest(goal)[0]
+
+                if dist < self._max_radius and not self._collision_checker.contains_edge(nearest, goal):
+                    last_state = nearest
+                    break
+
             s = self._sampler.sample()
             dist, q, _ = self._indexer.knearest(s, k=1)[0]      # closest neighbour
 

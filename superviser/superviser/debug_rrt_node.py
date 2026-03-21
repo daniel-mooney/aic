@@ -6,6 +6,7 @@ from geometry_msgs.msg import Point, TransformStamped
 from tf2_ros.static_transform_broadcaster import StaticTransformBroadcaster
 
 import numpy as np
+import time
 
 from superviser.planner import RRT
 from superviser.planner.collision_checker import StraightCollisionChecker, RectangularObstacle2d
@@ -33,7 +34,7 @@ class RRTTester(Node):
             self._collision_checker,
             self._sampler,
             self._indexer,
-            max_radius=0.5,
+            max_radius=0.3,
         )
 
         # ROS setup
@@ -209,8 +210,18 @@ class RRTTester(Node):
 
         self.get_logger().info("Searching for plan...")
         path = self._rrt.plan(start, goal)
+        self.get_logger().info(f"Found plan (len={len(path)})")
 
-        self.get_logger().info(f"Generated plan{path}")
+        # Write path to rviz
+        for i, v in enumerate(path[:-1]):
+            self.draw_point(v)
+
+            next_v = path[i+1]
+            self.draw_edge(v, next_v)
+            time.sleep(0.05)
+
+        self.draw_point(path[-1])            
+
         self.run_timer.cancel()
 
 def main(args=None):
