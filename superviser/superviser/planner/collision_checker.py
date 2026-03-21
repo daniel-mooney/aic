@@ -4,7 +4,7 @@ import numpy as np
 
 class Obstacle(ABC):
     @abstractmethod
-    def contains(self, cfg: State) -> bool:
+    def contains(self, state: State) -> bool:
         """Check if a configuration is contained within an Obstacle.
 
         Args:
@@ -35,6 +35,14 @@ class Obstacle(ABC):
         """The dimension of the obstacle"""
         pass
 
+    @abstractmethod
+    def collision_interval(self, a: State, b: State) -> float:
+        """Returns the percentage of an interval until a collision
+        occurs with the given obstacle. The output will always fall in [0,1],
+        where 0 indicates `a` being in a collision and 1 for no collision along
+        the entire interval."""
+        pass
+
 class RectangularObstacle3d(Obstacle):
     def __init__(self, x_span: tuple, y_span: tuple, z_span: tuple) -> None:
         """Creates a Rectangular Obstacle.
@@ -60,6 +68,10 @@ class RectangularObstacle3d(Obstacle):
         )
 
     def contains_line(self, a: State, b: State) -> bool:
+        return self.collision_interval(a, b) != 1
+
+    
+    def collision_interval(self, a: State, b: State) -> float:
         if len(a) != self.dim or len(b) != self.dim:
             raise ValueError("Invalid state dimension")
 
@@ -90,12 +102,65 @@ class RectangularObstacle3d(Obstacle):
             t_close = max(tx_close, ty_close, tz_close)
             t_far = min(tx_far, ty_far, tz_far)
 
-        return t_close <= t_far and t_close <= 1 and t_far >= 0
-
+        if t_close <= t_far and 0 <= t_close <= 1 and t_far >= 0:
+            return t_close
+        else:
+            return 1.0
 
     @property
     def dim(self) -> int:
         return 3
+
+class RectangularObstacle2d(Obstacle):
+    def __init__(self, x_span: tuple, y_span: tuple) -> None:
+        self._x_span = x_span
+        self._y_span = y_span
+
+    @property
+    def dim(self) -> int:
+        return 2
+
+    def contains(self, state: State) -> bool:
+        (x_min, x_max) = self._x_span
+        (y_min, y_max) = self._y_span
+
+        return (
+            x_min <= state[0] <= x_max
+            and y_min <= state[1] <= y_max
+        )
+
+    def contains_line(self, a: State, b: State) -> bool:
+        return self.collision_interval(a, b) != 1
+
+    def collision_interval(self, a: State, b: State) -> float:
+        if len(a) != self.dim or len(b) != self.dim:
+            raise ValueError("Invalid state dimension")
+
+        # Slab method
+        with np.errstate(divide='ignore', invalid='ignore'):
+            diff = b - a
+            
+            (x_low, x_high) = self._x_span
+            (y_low, y_high) = self._y_span
+            
+            # Use np.divide for IEEE754 i.e. extended real numbers
+            tx_low = np.divide(x_low - a[0], diff[0])
+            tx_high = np.divide(x_high - a[0], diff[0])
+            tx_close = np.fmin(tx_low, tx_high)
+            tx_far = np.fmax(tx_low, tx_high)
+
+            ty_low = np.divide(y_low - a[1], diff[1])
+            ty_high = np.divide(y_high - a[1], diff[1])
+            ty_close = np.fmin(ty_low, ty_high)
+            ty_far = np.fmax(ty_low, ty_high)
+
+            t_close = max(tx_close, ty_close)
+            t_far = min(tx_far, ty_far)
+
+        if t_close <= t_far and 0 <= t_close <= 1 and t_far >= 0:
+            return t_close
+        else:
+            return 1.0
 
 class CollisionChecker(ABC):
     def __init__(self, inter_method: str = "straight") -> None:
@@ -103,11 +168,15 @@ class CollisionChecker(ABC):
 
 
     @abstractmethod
-    def contains_cfg(self, cfg: State) -> bool:
+    def contains_state(self, cfg: State) -> bool:
         pass
 
     @abstractmethod
     def contains_edge(self, a: State, b: State) -> bool:
+        pass
+
+    @abstractmethod
+    def collision_interval(self, a: State, b: State) -> float:
         pass
 
 class StraightCollisionChecker(CollisionChecker):
@@ -123,7 +192,7 @@ class StraightCollisionChecker(CollisionChecker):
 
         self._obstacles.append(obs)
 
-    def contains_cfg(self, cfg: State) -> bool:
+    def contains_state(self, cfg: State) -> bool:
         """Checks if a configuration is within an obstacle."""
         for obs in self._obstacles:
             if obs.contains(cfg):
@@ -144,3 +213,20 @@ class StraightCollisionChecker(CollisionChecker):
             if obs.contains_line(a, b):
                 return True
         return False
+
+    def collision_interval(self, a: State, b: State) -> float:
+        """Finds the interval proportion until an obstacle is hit.
+
+        Args:
+            a: 
+            b: 
+
+        Returns:
+            
+        """
+        interval = 1.0
+
+        for obs in self._obstacles:
+            interval = min(interval, obs.collision_interval(a, b))
+
+        return interval

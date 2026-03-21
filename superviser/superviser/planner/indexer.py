@@ -33,6 +33,14 @@ class Indexer(ABC, Generic[K,T]):
         """
         pass
 
+    def clear(self) -> None:
+        """Clears the index"""
+
+    @abstractmethod
+    def distance(self, a: Indexable[K], b: Indexable[K]) -> float:
+        """Returns the distance between two indexable items."""
+        pass
+
     @abstractmethod
     def knearest(
         self,
@@ -102,6 +110,10 @@ class KDTree(Indexer[K,T]):
         self._root: Optional[_KDNode[K, T]] = None
         self._dim = dim
 
+    def distance(self, a: Indexable[K], b: Indexable[K]) -> float:
+        """Returns the distance between two indexable items."""
+        return self._metric(a, b)
+
     def add(self, key: Indexable[K], data: Optional[T] = None) -> None:
         """Add an entry to the kd-tree.
 
@@ -120,6 +132,10 @@ class KDTree(Indexer[K,T]):
             return
 
         self._entries.append(entry)
+
+    def clear(self) -> None:
+        self._entries = []
+        self._root = None
 
     def knearest(
         self,
