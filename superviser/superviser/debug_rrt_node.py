@@ -7,7 +7,7 @@ from tf2_ros.static_transform_broadcaster import StaticTransformBroadcaster
 
 import numpy as np
 
-from superviser.planner import RRT
+from superviser.planner import RRT, RRTStar
 from superviser.planner.collision_checker import StraightCollisionChecker, RectangularObstacle2d
 from superviser.planner.sampler import State, UniformEuclieanSampler
 from superviser.planner.indexer import KDTree
@@ -29,11 +29,19 @@ class RRTTester(Node):
             axis_dist_metric=lambda a, b, _: abs(a - b),
         )
 
-        self._rrt = RRT(
+        # self._rrt = RRT(
+        #     self._collision_checker,
+        #     self._sampler,
+        #     self._indexer,
+        #     max_radius=0.1,
+        # )
+
+        self._rrt = RRTStar(
             self._collision_checker,
             self._sampler,
             self._indexer,
-            max_radius=0.1,
+            join_radius=0.3,
+            update_radius=0.6,
         )
 
         # ROS setup
@@ -88,7 +96,7 @@ class RRTTester(Node):
         # Add obstacles
         obstacle = RectangularObstacle2d(
             x_span=(4.0, 6.0),
-            y_span=(4.0, 6.0),
+            y_span=(2.0, 8.0),
         )
 
         self._collision_checker.add_obstacle(obstacle)
@@ -111,7 +119,7 @@ class RRTTester(Node):
         obs1_marker.pose.orientation.w = 1.0
 
         obs1_marker.scale.x = 2.0
-        obs1_marker.scale.y = 2.0
+        obs1_marker.scale.y = 6.0
         obs1_marker.scale.z = 0.1
 
         obs1_marker.color.r = 1.0

@@ -1,1 +1,1 @@
-from superviser.planner.planner import RRT
+from superviser.planner.planner import RRT, RRTStar
