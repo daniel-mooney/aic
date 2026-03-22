@@ -40,8 +40,9 @@ class RRTTester(Node):
             self._collision_checker,
             self._sampler,
             self._indexer,
-            join_radius=0.3,
-            update_radius=0.6,
+            join_radius=0.1,
+            update_radius=1,
+            check_goal_rate=0.01,
         )
 
         # ROS setup

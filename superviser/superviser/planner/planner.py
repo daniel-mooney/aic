@@ -147,7 +147,7 @@ class RRTStar(Planner):
         while True:
             # Randomly check if can connect to goal
             check_goal = random.random() < self._check_goal_rate
-            check_goal = False
+            # check_goal = False
             if check_goal:
                 # Can assume indexer has at least one item
                 n_dist, nearest, _ = self._indexer.knearest(goal)[0]
@@ -155,7 +155,6 @@ class RRTStar(Planner):
                 if not self._collision_checker.contains_edge(nearest, goal):
                     last_state = nearest
                     last_dist = n_dist
-                    print("RANDOM")
                     break
             
             s = self._sampler.sample()
@@ -177,43 +176,19 @@ class RRTStar(Planner):
             if max_iter != 1.0:
                 s = q + delta * max_iter
 
-            # Join to best neighbour
-            neighbours = [p for p, _ in self._indexer.within(s, self._update_radius)]
-            # Filter out neighbours that result in collision
-            neighbours = filter(
-                lambda x: not self._collision_checker.contains_edge(s, x),
-                neighbours
-            )
-
-            cost_to_reach = lambda p: (
-                self._graph.nodes[tuple(p)]['cost'] 
-                + self._indexer.distance(p, s)
-            )
-            best_neighbour = min(neighbours, key=cost_to_reach)
+            s_cost = self._add_node(s)
             
-            # Add to graph
-            s_cost = self._indexer.distance(best_neighbour, s) + self._graph.nodes[tuple(best_neighbour)]['cost'] 
-            self._graph.add_node(tuple(s), cost=s_cost)
-            self._graph.add_edge(tuple(best_neighbour), tuple(s))
-            self._indexer.add(s)
-
             last_state = s
             last_cost = s_cost
-
-            # Improve neighbour edges
-            for n in neighbours:
-                pass
-            
             # See if can terminate
             if self._indexer.distance(s, goal) < self._join_radius and not self._collision_checker.contains_edge(s, goal):
-                print("DONE")
                 break
-
 
         # Connect last state to goal
         last_cost = self._graph.nodes[tuple(last_state)]['cost']
         self._graph.add_node(tuple(goal), cost=(last_cost + last_dist))
         self._graph.add_edge(tuple(last_state), tuple(goal))
+        # self._add_node(goal)
 
         # Generate ordered list of states
         curr = tuple(goal)
@@ -230,3 +205,38 @@ class RRTStar(Planner):
 
         trajectory.appendleft(start)
         return list(trajectory)
+
+    def _add_node(self, s: State) -> float:
+        """Adds the node to the graph. Returns the cost to reach the node"""
+        # Join to best neighbour
+        neighbours = [p for p, _ in self._indexer.within(s, self._update_radius)]
+
+        # Filter out neighbours that result in collision
+        neighbours = [x for x in neighbours if not self._collision_checker.contains_edge(s, x)]
+
+        cost_to_reach = lambda p: (
+                self._graph.nodes[tuple(p)]['cost'] 
+                + self._indexer.distance(p, s)
+                )
+        best_neighbour = min(neighbours, key=cost_to_reach)
+
+        # Add to graph
+        s_cost = self._indexer.distance(best_neighbour, s) + self._graph.nodes[tuple(best_neighbour)]['cost'] 
+        self._graph.add_node(tuple(s), cost=s_cost)
+        self._graph.add_edge(tuple(best_neighbour), tuple(s))
+        self._indexer.add(s)
+
+        # Improve neighbour edges
+        for n in neighbours:
+            n_node = self._graph.nodes[tuple(n)]
+            n_cost = n_node['cost']
+            edge_cost = self._indexer.distance(s, n)
+
+            # Replace edge if better path through s
+            if n_cost > s_cost + edge_cost:
+                # Only one parent per node
+                p_key, n_key = next(iter(self._graph.in_edges(tuple(n))))
+                self._graph.remove_edge(p_key, n_key)
+
+                self._graph.add_edge(tuple(s), n_key)
+                n_node['cost'] = edge_cost + s_cost
