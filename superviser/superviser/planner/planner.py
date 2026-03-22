@@ -176,12 +176,16 @@ class RRTStar(Planner):
             if max_iter != 1.0:
                 s = q + delta * max_iter
 
+            if tuple(s) in self._graph:
+                continue
+
             s_cost = self._add_node(s)
             
             last_state = s
             last_cost = s_cost
             # See if can terminate
             if self._indexer.distance(s, goal) < self._join_radius and not self._collision_checker.contains_edge(s, goal):
+                last_dist = self._indexer.distance(s, goal)
                 break
 
         # Connect last state to goal
@@ -239,4 +243,14 @@ class RRTStar(Planner):
                 self._graph.remove_edge(p_key, n_key)
 
                 self._graph.add_edge(tuple(s), n_key)
-                n_node['cost'] = edge_cost + s_cost
+                delta_cost = (s_cost + edge_cost) - n_cost
+                # n_node['cost'] = edge_cost + s_cost
+                self._update_costs(n_key, delta_cost)
+
+    def _update_costs(self, root: tuple, delta: float) -> None:
+        stack = [root]
+
+        while stack:
+            node = stack.pop()
+            self._graph.nodes[node]['cost'] += delta
+            stack.extend(self._graph.successors(node))
