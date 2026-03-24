@@ -76,12 +76,12 @@ class RRTTester(Node):
         boundary_marker.action = Marker.ADD
 
         boundary_marker.points = [
-                    Point(x=0.0, y=0.0),
-                    Point(x=0.0, y=10.0),
-                    Point(x=10.0, y=10.0),
-                    Point(x=10.0, y=0.0),
-                    Point(x=0.0, y=0.0),
-                ]
+            Point(x=0.0, y=0.0),
+            Point(x=0.0, y=10.0),
+            Point(x=10.0, y=10.0),
+            Point(x=10.0, y=0.0),
+            Point(x=0.0, y=0.0),
+        ]
         
         boundary_marker.pose.orientation.w = 1.0
 

@@ -27,6 +27,7 @@ from aic_model_interfaces.msg import Observation
 from aic_task_interfaces.msg import Task
 from geometry_msgs.msg import Pose, Vector3, Wrench
 from rclpy.duration import Duration
+from rclpy.node import Node
 from std_msgs.msg import Header
 from tf2_ros.buffer import Buffer
 from tf2_ros.transform_listener import TransformListener
@@ -69,8 +70,8 @@ SendFeedbackCallback = Callable[[str], None]
 
 
 class Policy(ABC):
-    def __init__(self, parent_node):
-        self._parent_node = parent_node
+    def __init__(self, parent_node: Node):
+        self._parent_node: Node = parent_node
         self.get_logger().info("Policy.__init__()")
 
     def get_logger(self):

@@ -31,9 +31,15 @@ from aic_model_interfaces.msg import Observation
 from aic_task_interfaces.msg import Task
 from geometry_msgs.msg import Point, Pose, Quaternion, Vector3, Wrench
 from rclpy.duration import Duration
+from rclpy.node import Node
+
+from superviser.planner import RRTStar
+from superviser.planner.indexer import KDTree
+from superviser.planner.sampler import UniformEuclieanSampler
+from superviser.planner.collision_checker import CollisionChecker, RectangularObstacle3d
 
 class WaveArm(Policy):
-    def __init__(self, parent_node):
+    def __init__(self, parent_node: Node):
         super().__init__(parent_node)
         self.get_logger().info("WaveArm.__init__()")
 

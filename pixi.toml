@@ -37,6 +37,7 @@ setuptools = ">=71.0.0,<81.0.0"                                                 
 pyqt = ">=5.15.11,<6"
 ros-kilted-rosbag2-transport = ">=0.32.0,<0.33"
 ros-kilted-rosbag2-storage-default-plugins = ">=0.32.0,<0.33"
+ros-kilted-superviser = { path= "superviser" }
 
 [pypi-dependencies]
 huggingface-hub = { version = "==0.35.3", extras = ["hf-transfer", "cli"] }
