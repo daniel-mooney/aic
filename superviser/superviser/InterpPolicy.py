@@ -112,7 +112,7 @@ class InterpPolicy(Policy):
             qy = tf_grbl.transform.rotation.y
             qz = tf_grbl.transform.rotation.z
             qw = tf_grbl.transform.rotation.w
-
+            #
             # Convert to a pose
             pose = Pose(
                 position=Point(x=x, y=y, z=z),
@@ -120,15 +120,39 @@ class InterpPolicy(Policy):
             )
 
             self._parent_node.get_logger().info(f"Moving to: {pose}")
-            
-            self._move(pose, move_robot)
 
-        self._parent_node.get_clock().sleep_for(Duration(seconds=2.0))
+            self.set_pose_target(move_robot, pose, frame_id="base_link")
+
+            # # move along one axis at a time
+            # xr = tf_grbl.transform.translation.x 
+            # yr = tf_grbl.transform.translation.y 
+            # zr = tf_grbl.transform.translation.z 
+            #
+            # pose1 = Pose(
+            #     position=Point(x=x, y=yr, z=zr),
+            #     orientation=Quaternion(x=qx, y=qy, z=qz, w=qw),
+            # )
+            #
+            # pose2 = Pose(
+            #     position=Point(x=x, y=y, z=zr),
+            #     orientation=Quaternion(x=qx, y=qy, z=qz, w=qw),
+            # )
+            #
+            # pose3 = Pose(
+            #     position=Point(x=x, y=y, z=z),
+            #     orientation=Quaternion(x=qx, y=qy, z=qz, w=qw),
+            # )
+            #
+            # self.set_pose_target(move_robot, pose1)
+            # self._parent_node.get_clock().sleep_for(Duration(seconds=2.5))
+            #
+            # self.set_pose_target(move_robot, pose2)
+            # self._parent_node.get_clock().sleep_for(Duration(seconds=2.5))
+            #
+            # self.set_pose_target(move_robot, pose3)
+            # self._parent_node.get_clock().sleep_for(Duration(seconds=2.5))
         return True
     
     # States
     def _raise(self, height: float) -> None:
         pass
-
-    def _move(self, goal: Pose, move_robot: MoveRobotCallback) -> None:
-        self.set_pose_target(move_robot, goal, frame_id="base_link")
